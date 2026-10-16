@@ -1,0 +1,97 @@
+inscripcion_id,persona_id,curso,estado,registro_crm
+INS-SIM-000,PER-SIM-000,Curso 1,Aprobado,0
+INS-SIM-001,PER-SIM-001,Curso 2,En curso,1
+INS-SIM-002,PER-SIM-002,Curso 3,Sin avance,1
+INS-SIM-003,PER-SIM-003,Curso 4,Aprobado,1
+INS-SIM-004,PER-SIM-004,Curso 1,En curso,1
+INS-SIM-005,PER-SIM-005,Curso 2,Sin avance,0
+INS-SIM-006,PER-SIM-006,Curso 3,Aprobado,1
+INS-SIM-007,PER-SIM-007,Curso 4,En curso,1
+INS-SIM-008,PER-SIM-008,Curso 1,Sin avance,1
+INS-SIM-009,PER-SIM-009,Curso 2,Aprobado,1
+INS-SIM-010,PER-SIM-010,Curso 3,En curso,0
+INS-SIM-011,PER-SIM-011,Curso 4,Sin avance,1
+INS-SIM-012,PER-SIM-012,Curso 1,Aprobado,1
+INS-SIM-013,PER-SIM-013,Curso 2,En curso,1
+INS-SIM-014,PER-SIM-014,Curso 3,Sin avance,1
+INS-SIM-015,PER-SIM-015,Curso 4,Aprobado,0
+INS-SIM-016,PER-SIM-016,Curso 1,En curso,1
+INS-SIM-017,PER-SIM-017,Curso 2,Sin avance,1
+INS-SIM-018,PER-SIM-018,Curso 3,Aprobado,1
+INS-SIM-019,PER-SIM-019,Curso 4,En curso,1
+INS-SIM-020,PER-SIM-020,Curso 1,Sin avance,0
+INS-SIM-021,PER-SIM-021,Curso 2,Aprobado,1
+INS-SIM-022,PER-SIM-022,Curso 3,En curso,1
+INS-SIM-023,PER-SIM-023,Curso 4,Sin avance,1
+INS-SIM-024,PER-SIM-024,Curso 1,Aprobado,1
+INS-SIM-025,PER-SIM-025,Curso 2,En curso,0
+INS-SIM-026,PER-SIM-026,Curso 3,Sin avance,1
+INS-SIM-027,PER-SIM-027,Curso 4,Aprobado,1
+INS-SIM-028,PER-SIM-028,Curso 1,En curso,1
+INS-SIM-029,PER-SIM-029,Curso 2,Sin avance,1
+INS-SIM-030,PER-SIM-030,Curso 3,Aprobado,0
+INS-SIM-031,PER-SIM-031,Curso 4,En curso,1
+INS-SIM-032,PER-SIM-032,Curso 1,Sin avance,1
+INS-SIM-033,PER-SIM-033,Curso 2,Aprobado,1
+INS-SIM-034,PER-SIM-034,Curso 3,En curso,1
+INS-SIM-035,PER-SIM-035,Curso 4,Sin avance,0
+INS-SIM-036,PER-SIM-036,Curso 1,Aprobado,1
+INS-SIM-037,PER-SIM-037,Curso 2,En curso,1
+INS-SIM-038,PER-SIM-038,Curso 3,Sin avance,1
+INS-SIM-039,PER-SIM-039,Curso 4,Aprobado,1
+INS-SIM-040,PER-SIM-040,Curso 1,En curso,0
+INS-SIM-041,PER-SIM-041,Curso 2,Sin avance,1
+INS-SIM-042,PER-SIM-042,Curso 3,Aprobado,1
+INS-SIM-043,PER-SIM-043,Curso 4,En curso,1
+INS-SIM-044,PER-SIM-044,Curso 1,Sin avance,1
+INS-SIM-045,PER-SIM-045,Curso 2,Aprobado,0
+INS-SIM-046,PER-SIM-046,Curso 3,En curso,1
+INS-SIM-047,PER-SIM-047,Curso 4,Sin avance,1
+INS-SIM-048,PER-SIM-048,Curso 1,Aprobado,1
+INS-SIM-049,PER-SIM-049,Curso 2,En curso,1
+INS-SIM-050,PER-SIM-050,Curso 3,Sin avance,0
+INS-SIM-051,PER-SIM-051,Curso 4,Aprobado,1
+INS-SIM-052,PER-SIM-052,Curso 1,En curso,1
+INS-SIM-053,PER-SIM-000,Curso 2,Sin avance,1
+INS-SIM-054,PER-SIM-001,Curso 3,Aprobado,1
+INS-SIM-055,PER-SIM-002,Curso 4,En curso,0
+INS-SIM-056,PER-SIM-003,Curso 1,Sin avance,1
+INS-SIM-057,PER-SIM-004,Curso 2,Aprobado,1
+INS-SIM-058,PER-SIM-005,Curso 3,En curso,1
+INS-SIM-059,PER-SIM-006,Curso 4,Sin avance,1
+INS-SIM-060,PER-SIM-007,Curso 1,Aprobado,0
+INS-SIM-061,PER-SIM-008,Curso 2,En curso,1
+INS-SIM-062,PER-SIM-009,Curso 3,Sin avance,1
+INS-SIM-063,PER-SIM-010,Curso 4,Aprobado,1
+INS-SIM-064,PER-SIM-011,Curso 1,En curso,1
+INS-SIM-065,PER-SIM-012,Curso 2,Sin avance,0
+INS-SIM-066,PER-SIM-013,Curso 3,Aprobado,1
+INS-SIM-067,PER-SIM-014,Curso 4,En curso,1
+INS-SIM-068,PER-SIM-015,Curso 1,Sin avance,1
+INS-SIM-069,PER-SIM-016,Curso 2,Aprobado,1
+INS-SIM-070,PER-SIM-017,Curso 3,En curso,0
+INS-SIM-071,PER-SIM-018,Curso 4,Sin avance,1
+INS-SIM-072,PER-SIM-019,Curso 1,Aprobado,1
+INS-SIM-073,PER-SIM-020,Curso 2,En curso,1
+INS-SIM-074,PER-SIM-021,Curso 3,Sin avance,1
+INS-SIM-075,PER-SIM-022,Curso 4,Aprobado,0
+INS-SIM-076,PER-SIM-023,Curso 1,En curso,1
+INS-SIM-077,PER-SIM-024,Curso 2,Sin avance,1
+INS-SIM-078,PER-SIM-025,Curso 3,Aprobado,1
+INS-SIM-079,PER-SIM-026,Curso 4,En curso,1
+INS-SIM-080,PER-SIM-027,Curso 1,Sin avance,0
+INS-SIM-081,PER-SIM-028,Curso 2,Aprobado,1
+INS-SIM-082,PER-SIM-029,Curso 3,En curso,1
+INS-SIM-083,PER-SIM-030,Curso 4,Sin avance,1
+INS-SIM-084,PER-SIM-031,Curso 1,Aprobado,1
+INS-SIM-085,PER-SIM-032,Curso 2,En curso,0
+INS-SIM-086,PER-SIM-033,Curso 3,Sin avance,1
+INS-SIM-087,PER-SIM-034,Curso 4,Aprobado,1
+INS-SIM-088,PER-SIM-035,Curso 1,En curso,1
+INS-SIM-089,PER-SIM-036,Curso 2,Sin avance,1
+INS-SIM-090,PER-SIM-037,Curso 3,Aprobado,0
+INS-SIM-091,PER-SIM-038,Curso 4,En curso,1
+INS-SIM-092,PER-SIM-039,Curso 1,Sin avance,1
+INS-SIM-093,PER-SIM-040,Curso 2,Aprobado,1
+INS-SIM-094,PER-SIM-041,Curso 3,En curso,1
+INS-SIM-095,PER-SIM-042,Curso 4,Sin avance,0
