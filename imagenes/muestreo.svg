@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="titulo desc">
+<title id="titulo">Selección reproducible por programa</title><desc id="desc">Datos totalmente inventados, demostración posterior.</desc>
+<rect width="1200" height="660" fill="#F3F6FA"/>
+<text x="40" y="46" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#146D78" font-weight="bold">ANALÍTICA DE GESTIÓN · EJEMPLO NUEVO</text>
+<text x="40" y="88" font-family="DejaVu Sans, sans-serif" font-size="29" fill="#16324F" font-weight="bold">Selección reproducible por programa</text>
+<text x="40" y="119" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#16324F" font-weight="normal">DEMOSTRACIÓN SINTÉTICA POSTERIOR · sin registros ni cifras institucionales</text>
+<rect x="40" y="151" width="362" height="110" rx="12" fill="white"/>
+<text x="60" y="184" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#16324F" font-weight="normal">Población artificial</text>
+<text x="60" y="230" font-family="DejaVu Sans, sans-serif" font-size="30" fill="#16324F" font-weight="bold">36</text>
+<rect x="418" y="151" width="362" height="110" rx="12" fill="white"/>
+<text x="438" y="184" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#16324F" font-weight="normal">Registros seleccionados</text>
+<text x="438" y="230" font-family="DejaVu Sans, sans-serif" font-size="30" fill="#16324F" font-weight="bold">12</text>
+<rect x="796" y="151" width="362" height="110" rx="12" fill="white"/>
+<text x="816" y="184" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#16324F" font-weight="normal">Semilla del ejemplo</text>
+<text x="816" y="230" font-family="DejaVu Sans, sans-serif" font-size="30" fill="#16324F" font-weight="bold">731</text>
+<text x="40" y="310" font-family="DejaVu Sans, sans-serif" font-size="21" fill="#16324F" font-weight="bold">Distribución de la muestra seleccionada</text>
+<text x="40" y="374" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#16324F" font-weight="normal">Programa 1</text>
+<rect x="250" y="350" width="650.0" height="32" rx="4" fill="#3157A4"/>
+<text x="920" y="374" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#16324F" font-weight="normal">4</text>
+<text x="40" y="436" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#16324F" font-weight="normal">Programa 2</text>
+<rect x="250" y="412" width="650.0" height="32" rx="4" fill="#3157A4"/>
+<text x="920" y="436" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#16324F" font-weight="normal">4</text>
+<text x="40" y="498" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#16324F" font-weight="normal">Programa 3</text>
+<rect x="250" y="474" width="650.0" height="32" rx="4" fill="#3157A4"/>
+<text x="920" y="498" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#16324F" font-weight="normal">4</text>
+<text x="40" y="612" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#16324F" font-weight="normal">Muestra sin reemplazo. Tamaño ilustrativo; no es un diseño estadístico institucional.</text>
+</svg>

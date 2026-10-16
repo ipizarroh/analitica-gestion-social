@@ -1,0 +1,24 @@
+{
+  "formacion": {
+    "naturaleza": "SINTÉTICO POSTERIOR",
+    "inscripciones": 96,
+    "personas": 53,
+    "estados": {
+      "Aprobado": 32,
+      "En curso": 32,
+      "Sin avance": 32
+    },
+    "tasa_aprobacion": 0.3333333333333333
+  },
+  "muestreo": {
+    "naturaleza": "SINTÉTICO POSTERIOR",
+    "semilla": 731,
+    "poblacion": 36,
+    "muestra": 12,
+    "por_programa": {
+      "Programa 1": 4,
+      "Programa 2": 4,
+      "Programa 3": 4
+    }
+  }
+}

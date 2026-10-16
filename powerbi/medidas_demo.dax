@@ -1,0 +1,5 @@
+// Demostración posterior. No es DAX histórico. Tabla: FormacionDemo.
+Inscripciones demo = COUNTROWS(FormacionDemo)
+Personas demo = DISTINCTCOUNT(FormacionDemo[persona_id])
+Aprobaciones demo = CALCULATE(COUNTROWS(FormacionDemo), FormacionDemo[estado] = "Aprobado")
+Tasa aprobación demo = DIVIDE([Aprobaciones demo], [Inscripciones demo])
