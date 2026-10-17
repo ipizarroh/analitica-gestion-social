@@ -1,39 +1,49 @@
 # Analítica para la gestión social · Hogar de Cristo
 
-**Ignacio Pizarro Hurtado · Ingeniero Civil Industrial · Power BI · Excel · ETL y calidad de datos**
+**Ignacio Pizarro Hurtado · Ingeniero Civil Industrial**  
+**Power BI · Excel · Preparación y calidad de datos · Control de gestión**
 
-Durante 2022–2024 desarrollé dashboards, prototipos y análisis para áreas usuarias; colaboré con BI/TI y mantuve soluciones Excel preexistentes. Estos seis casos explican mi responsabilidad y cómo los abordaría hoy con modelamiento, SQL, Python, Power Query y DAX.
+Durante 2022–2024 desarrollé dashboards, prototipos y análisis para apoyar el seguimiento de formación, vinculación institucional y programas sociales en Hogar de Cristo. Mi trabajo incluyó levantar requerimientos con áreas usuarias, preparar información, construir reportes y colaborar con BI/TI. También mantuve y actualicé soluciones Excel preexistentes.
 
-La recuperación histórica permitió examinar **21 PBIX originales y otras once copias en comprimidos: 27 versiones distintas por SHA-256**, además de libros, código R, documentos y capturas. Los originales y su trazabilidad detallada permanecen privados. El código publicado es desarrollo posterior con datos inventados, sin atribuirlo al período laboral.
+Este portafolio reúne seis casos de esa experiencia y muestra mi evolución técnica: **qué desarrollé, cuál fue mi responsabilidad y cómo abordaría hoy esos problemas con modelamiento de datos, Power Query, DAX, SQL y Python**. Cada caso diferencia el trabajo histórico acreditado, las propuestas de mejora y las implementaciones posteriores verificadas.
 
-## Ver el trabajo
+## Explorar el portafolio
 
-[**Recreación de Formación basada en el reporte recuperado**](https://ipizarroh.github.io/analitica-gestion-social/recuperacion/) · [Proyecto Power BI para validar en Desktop](powerbi/recuperacion_formacion/README.md) · [Demos de cohortes y asistencia](https://ipizarroh.github.io/analitica-gestion-social/) · [Auditoría y procedencia](recuperacion_historica.md)
+- [**Ver la recreación funcional de Escuela de Formación**](https://ipizarroh.github.io/analitica-gestion-social/recuperacion/).
+- [Revisar el proyecto Power BI y su protocolo de validación en Desktop](powerbi/recuperacion_formacion/README.md).
+- [Explorar las demostraciones de cohortes y asistencia](https://ipizarroh.github.io/analitica-gestion-social/).
 
-La recreación conserva cinco indicadores, cinco filtros, tres tablas y una distribución por vínculo. Añade resolución de afiliaciones al corte y cuarentena de conflictos. **Es una implementación web independiente de 2026; no una captura histórica ni una validación de Power BI Desktop.**
+La recreación de Formación se basa en la estructura del reporte histórico recuperado: conserva cinco indicadores, cinco filtros, tres tablas y una distribución por vínculo. Incorpora controles posteriores para determinar la afiliación vigente a una fecha de corte y separar los registros con información contradictoria.
 
-![Recreación independiente de Formación con datos inventados](imagenes/formacion_fase3_total.jpg)
+**La demostración es una implementación web de 2026 con datos completamente sintéticos.** Permite explorar los cálculos y las interacciones; la validación del nuevo proyecto en Power BI Desktop permanece pendiente.
 
-## Seis casos y mi contribución
+![Recreación de Escuela de Formación con datos sintéticos](imagenes/formacion_fase3_total.jpg)
 
-| Caso | Trabajo histórico acreditado | Evidencia y evolución actual |
+## Seis casos: mi contribución y evolución técnica
+
+| Caso | Mi contribución histórica acreditada | Cómo lo abordaría hoy |
 |---|---|---|
-| [Vinculación / Enredados](casos/01_vinculacion/README.md) | Requerimientos, extractos recibidos, prototipos y navegación propia | Documentos y capturas; modelo de actividades y relaciones múltiples propuesto |
-| [Escuela de Formación](casos/02_formacion/README.md) | Reporterías, prototipos y seguimiento mensual | PBIX, DAX, M y libros; recreación funcional y candidato PBIR/TMSL |
-| [Calidad CRM](casos/03_calidad_crm/README.md) | Propuesta remitida a TI; revisión colaborativa del piloto | Documentos de propuesta; reglas versionadas y cuarentena |
-| [Educación Inicial](casos/04_educacion_inicial/README.md) | Actualización de libros existentes, muestreo y botones | Fórmulas, pivots y conexiones; demo de jornadas esperadas y cobertura |
-| [Trayectorias](casos/05_longitudinal/README.md) | Elaboración colaborativa sobre bases facilitadas por jefatura | Libros, criterios y PBIX; episodios, pares y censura propuestos |
-| [Exploración predictiva](casos/06_predictiva/README.md) | Consolidación y exploración RStudio/Power BI supervisada | R recuperado; auditoría de evaluación y propuesta para conteos por programa |
+| [Vinculación institucional y Enredados](casos/01_vinculacion/README.md) | Levantamiento de requerimientos, trabajo con extractos recibidos, prototipos y navegación del reporte; colaboración con BI/TI. | Modelar actividades, instituciones y sus relaciones para analizar la participación sin duplicar resultados. |
+| [Escuela de Formación](casos/02_formacion/README.md) | Elaboración de reportes, prototipos y seguimiento mensual con Excel y Power BI. | Separar personas e inscripciones, resolver afiliaciones por fecha y conciliar indicadores. Incluye una recreación funcional. |
+| [Calidad y gobierno de datos del CRM](casos/03_calidad_crm/README.md) | Análisis de categorías, propuesta remitida a TI y revisión colaborativa del piloto de autorregistro. | Diseñar catálogos con vigencia, reglas de calidad y seguimiento de excepciones con responsables. |
+| [Educación Inicial y asistencia](casos/04_educacion_inicial/README.md) | Actualización de libros existentes, participación en muestreo y desarrollo de botones de navegación. | Distinguir jornadas esperadas, asistencia registrada y cobertura de datos para interpretar correctamente los resultados. |
+| [Trayectorias sociales](casos/05_longitudinal/README.md) | Elaboración colaborativa de análisis sobre bases facilitadas por jefatura. | Definir episodios, cohortes y mediciones comparables, considerando seguimientos incompletos y sesgos de selección. |
+| [Exploración predictiva y medición de programas](casos/06_predictiva/README.md) | Consolidación y exploración supervisada con RStudio y Power BI. | Revisar la preparación de datos y la evaluación estadística antes de proponer modelos de conteos por programa. |
 
-Cada caso incluye **«Cómo lo desarrollé entonces y cómo lo abordaría hoy»**. Se distingue desarrollo, colaboración, mantenimiento y propuesta. Aceptar prototipos no demuestra despliegue; identificar inactivos no acredita bajas; correlación no prueba impacto.
+Cada caso desarrolla **«Cómo lo desarrollé entonces y cómo lo abordaría hoy»**: problema de gestión, herramientas, responsabilidad, fortalezas, limitaciones, arquitectura propuesta y pruebas necesarias. Las propuestas se presentan como tales; los resultados operativos solo se afirman cuando existe evidencia que los respalde.
 
-## Evidencia técnica reproducible
+## Evidencia técnica que puedes revisar
 
-- [ETL y contratos](src/recuperacion.py): afiliación vigente, duplicados, huérfanos y conflictos sin asignación arbitraria.
-- [Modelo sintético](datos_recuperacion/README.md): universo registrado separado de inscripciones y diccionario de granos.
-- [DAX, M y Power BI](powerbi/recuperacion_formacion/): fuentes nuevas, relaciones unidireccionales y quince visuales PBIR.
-- [Pruebas](tests/): contratos y conciliación Python/SQL; paridad JavaScript y contextos vacíos.
-- [Verificación](VERIFICACION.md): JSON/PBIR validado contra esquemas públicos; ejecución DAX/M, refresh y render Desktop **pendientes**.
+- **[Modelamiento de datos](datos_recuperacion/README.md):** granularidad documentada, separación entre personas e inscripciones y diccionario de datos.
+- **[ETL y calidad](src/recuperacion.py):** transformaciones reproducibles, detección de duplicados, referencias sin correspondencia y afiliaciones contradictorias.
+- **[Power Query, DAX y proyecto Power BI](powerbi/recuperacion_formacion/):** consultas y medidas nuevas, relaciones unidireccionales y definición de quince visuales.
+- **[Pruebas automatizadas](tests/):** 25 pruebas Python aprobadas, conciliación con SQL y comparación de resultados entre Python y JavaScript.
+- **[Validación y límites](VERIFICACION.md):** archivos JSON/PBIR comprobados contra esquemas públicos de Microsoft. La ejecución de DAX y M, la actualización de datos y la visualización en Power BI Desktop están pendientes.
+
+<details>
+<summary>Reproducir los desarrollos y ejecutar las pruebas</summary>
+
+Desde la raíz del repositorio, con las dependencias del proyecto instaladas:
 
 ```bash
 python src/evolucion.py
@@ -46,4 +56,14 @@ node tests/test_web.mjs
 node tests/test_recuperacion.mjs
 ```
 
-La reconstrucción y documentación actuales recibieron asistencia de IA. La autoría de mis dashboards laborales, con sus colaboraciones, conserva el protagonismo. [Autoría](AUTORIA_Y_USO.md) · [Fuentes y límites](fuentes_y_limites.md) · [Correcciones](CHANGELOG.md). Portafolio personal sin afiliación ni endoso institucional.
+</details>
+
+## Procedencia, autoría y confidencialidad
+
+La revisión histórica examinó 21 PBIX originales y once copias adicionales en comprimidos, correspondientes a 27 versiones distintas por SHA-256, además de libros Excel, código R, documentos y capturas. Estos materiales permiten fundamentar los casos y delimitar mi participación. Los originales y la trazabilidad detallada permanecen privados.
+
+**El código y los datos publicados corresponden a desarrollos posteriores**, identificados por separado de mi trabajo laboral de 2022–2024. La IA se utilizó como asistencia para la reconstrucción, el desarrollo posterior y la documentación. Mi autoría histórica y las colaboraciones acreditadas se describen en cada caso.
+
+[Autoría y uso](AUTORIA_Y_USO.md) · [Recuperación histórica](recuperacion_historica.md) · [Fuentes y límites](fuentes_y_limites.md) · [Historial de cambios](CHANGELOG.md)
+
+*Portafolio profesional personal, sin afiliación ni endoso institucional.*
