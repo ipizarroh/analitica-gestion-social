@@ -1,0 +1,3 @@
+PersonaID,Programa,Zona,Territorio,Desde,Motivo
+PERSONA_SIM_001,Programa ficticio 2,Zona ficticia 2,Territorio ficticio 2,2026-03-01,Concurrent associations require a business decision
+PERSONA_SIM_001,Programa en conflicto,Zona ficticia 2,Territorio ficticio 2,2026-03-01,Concurrent associations require a business decision

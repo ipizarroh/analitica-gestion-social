@@ -1,80 +1,34 @@
-# Educación Inicial: actualización de asistencia y apoyo al muestreo
+# Educación Inicial: asistencia, actualización y apoyo al muestreo
 
-## Necesidad de gestión
+Actualicé reportes Excel ya construidos, preparé y cargué bases, actualicé tablas dinámicas y apoyé la revisión mediante selección de participantes. Recibí capacitación de un colega para el consolidado. El informe me atribuye botones de navegación, sin atribuirme el diseño íntegro de sus cálculos o del sistema de incentivos.
 
-Los equipos requerían reportes actualizados de asistencia y un consolidado que apoyara la revisión de información utilizada en procesos de incentivos. La lectura dependía de distinguir capacidad, matrícula, días hábiles y registros efectivamente recibidos.
+**Evidencia histórica:** H06 y HC3-E04. Se recuperaron libros de asistencia y revisión, estructuras de hojas, tablas dinámicas, fórmulas y conexiones. Las imágenes originales muestran segmentadores, cobertura del registro, matrícula, asistencia y vistas trimestrales. La presencia de Power Pivot o macros en un libro no acredita que yo los haya programado.
 
-Las preguntas eran qué cobertura tenía el registro, cómo evolucionaba la asistencia y cómo seleccionar casos para revisión. No se publican registros de niños, matrículas, programas individualizables ni cifras institucionales.
+## Cómo lo desarrollé entonces y cómo lo abordaría hoy
 
-## Mi rol preciso
+### Problema y trabajo histórico
 
-Actualicé reportes Excel que ya estaban construidos. Limpié la base recibida, la cargué en una hoja del libro y actualicé sus tablas dinámicas. Para el consolidado recibí capacitación de un colega y actualicé registros y selección aleatoria. El documento también atribuye al autor botones de navegación del consolidado.
+El equipo requería reportes actualizados de asistencia y un consolidado para apoyar revisiones. Mi contribución consistió en mantener el flujo periódico de preparación, carga y actualización sobre soluciones preexistentes, comprender sus vistas y facilitar navegación. No decidí pagos ni elegibilidad mediante el portafolio.
 
-Ese trabajo no se presenta como diseño original de todo el libro, de sus cálculos ni del esquema de incentivos. Tampoco se atribuye una decisión sobre pagos o elegibilidad a la reportería realizada.
+La fortaleza fue sostener una operación recurrente y aprender el procedimiento con el referente del área. Las fuentes recuperadas permiten inspeccionar fórmulas y cachés de tablas dinámicas; aún no permiten certificar su recálculo nativo. El lector de modelos no pudo decodificar algunos contenedores Power Pivot por su formato de compresión. Eso limita la auditoría del extractor y no demuestra que Excel esté dañado.
 
-## Metodología e indicadores respaldados
+La selección aleatoria está documentada, pero no se recuperó una semilla que permita reproducir exactamente la muestra histórica. No se infiere que fuera incorrecta ni representativa de un diseño formal que no está acreditado.
 
-La documentación describe actualización semanal, revisión de vistas de programas y uso de números aleatorios para apoyar selección de participantes. Entre los indicadores mencionados están capacidad, matrícula, cobertura del registro, promedio diario de asistencia y proporciones de asistencia o ausencia. Sin el libro original no se certifican sus denominadores, fórmulas ni reglas de días justificados.
+### Arquitectura y reglas actuales
 
-La selección aleatoria histórica está documentada, pero no hay código ni semilla que permita reproducir la muestra original. No se afirma representatividad estadística ni validez de un diseño muestral formal no documentado.
+Modelaría **FactJornadaEsperada** a grano participante–día abierto con matrícula vigente, relacionada con fecha, programa y participante restringido. Una unión izquierda incorporaría asistencia observada; `Sin registro` seguiría siendo distinto de `Ausente`. Capacidad física, matrícula y jornadas no serían denominadores intercambiables.
 
-## Resultado demostrado y límites
+| KPI propuesto / implementado en demo | Denominador |
+|---|---|
+| Cobertura de registro | Jornadas recibidas / jornadas esperadas |
+| Asistencia observada | Presentes / jornadas recibidas |
+| Asistencia sobre esperadas | Presentes / jornadas esperadas |
+| Completitud por programa y corte | Mismo calendario y matrícula vigente |
 
-El resultado verificable es la actualización de reportes preexistentes y apoyo al proceso de revisión. No se demuestra una mejora cuantificada de asistencia, equidad o precisión de incentivos. Las capturas sirven como evidencia privada del formato del trabajo, no como material publicable.
+La [demo posterior](../../disenos/03_educacion.md) implementa ese universo con 24 participantes inventados, un cierre artificial y 336 jornadas esperadas. El calendario es una decisión sintética de la demo; no representa una política institucional. El muestreo posterior usa semilla fija, orden estable y selección sin reemplazo; no reconstruye la muestra laboral original.
 
-Trazabilidad privada H06. Estado: CONFIRMADO para actualización y apoyo al muestreo. Autoría íntegra del sistema e impacto cuantificado NO ACREDITADOS.
+### Pruebas, seguridad y aceptación
 
-## Aprendizaje y demostración posterior
+Se probaron matrícula solapada, observación fuera del universo, duplicados, faltantes y paridad del cálculo web. Para una liberación real exigiría conciliar días de funcionamiento, capacidad, matrícula y justificaciones con responsables de negocio, recalcular el libro en Excel y comparar celdas/pivots clave antes y después de actualizar. Las fórmulas leídas no equivalen a ese recálculo.
 
-Mantener un reporte exige comprender las fórmulas heredadas, revisar cortes y reconocer el alcance de la propia intervención. La demo nueva usa programas abstractos e IDs inventados, selección sin reemplazo y semilla fija. Ilustra reproducibilidad técnica; no replica la política institucional ni se utiliza para decisiones reales sobre personas.
-
-## ¿Cómo lo abordaría hoy? Evolución técnica y profesional (2026)
-
-### Objetivo y contribución histórica
-
-Para equipos de Educación Inicial, mantendría la periodicidad de revisión y la navegación que ayudé a incorporar. Actualicé libros ya construidos y recibí capacitación de un colega para consolidado y selección (págs. 28–32 y 39–46). No me atribuiría el diseño íntegro del sistema ni decisiones de incentivos. Sin libro fuente no se demuestra un error en sus fórmulas.
-
-### Retrospectiva y preguntas nuevas
-
-La no reproducibilidad de la muestra histórica desde el material recibido está demostrada por ausencia de semilla/código; no prueba que la selección fuera incorrecta. La posible confusión entre ausencia y dato no recibido es un riesgo a comprobar. Lo resolvería construyendo el universo esperado antes de unir observaciones.
-
-| Pregunta | Campos | Viabilidad |
-|---|---|---|
-| ¿Cuántas jornadas deberían estar informadas? | Matrícula vigente y días abiertos | Calculable en demo; histórico requiere calendario |
-| ¿Cuál es la asistencia entre jornadas recibidas y esperadas? | Presente/ausente y cobertura | Calculable en demo con dos denominadores |
-| ¿Qué incentivo corresponde? | Política formal, justificaciones y validación | No justificable desde la demo |
-
-### Modelo y procesamiento
-
-```mermaid
-flowchart TD
-  F[DimFecha] --> J[FactJornadaEsperada]
-  P[DimPrograma] --> J
-  I[DimParticipanteFicticio] --> J
-```
-
-Grano: participante–día abierto con matrícula vigente. Una unión izquierda con asistencia conserva `Sin registro` como estado distinto de `Ausente`. `Cobertura = DIVIDE([Jornadas recibidas],[Jornadas esperadas])` y `Asistencia observada = DIVIDE([Presentes],[Jornadas recibidas])`. El producto de ambas concilia con presentes/esperadas cuando hay base. No usar capacidad física como denominador de asistencia individual. [Diseño detallado](../../disenos/03_educacion.md).
-
-Pruebas: participante–fecha único, ningún registro fuera de matrícula o en cierre, suma de estados igual al universo, días sin base devuelven ausencia y totales por programa conciliados. El generador inventa un cierre; no reproduce feriados ni clima. Se conserva la demo previa de muestreo sin reemplazo y semilla fija como ejercicio separado, sin afirmar representatividad ni replicar incentivos.
-
-### Visualización, seguridad y operación
-
-Primero cobertura y pendientes; luego asistencia observada. Evitar semáforos que penalicen programas con registro incompleto. Tabla por programa con numeradores y denominadores visibles, filtro temporal y definición de cierre. En uso real, minimizar datos de menores, evitar exportación nominal y revisar supresión de celdas pequeñas. No se afirma haber implementado RLS. El responsable del calendario valida cierres y el del programa resuelve faltantes; recargas idempotentes con bitácora.
-
-| Antes | Propuesta actual | Riesgo / trade-off | Aceptación |
-|---|---|---|---|
-| Actualización de libro preexistente | Universo esperado + observaciones | Requiere matrícula/calendar confiables | P1: 0 huérfanos, 0 duplicados |
-| Reportería de asistencia | Cobertura separada de asistencia | Más indicadores que explicar | P1: faltante nunca se vuelve ausente |
-| Selección aleatoria de apoyo | Semilla y población versionadas | No sustituye diseño estadístico | P2: selección reproducible, sin reemplazo |
-
-Estado: **DISEÑO + IMPLEMENTACIÓN SINTÉTICA PROBADA (Python/navegador)**; **VALIDACIÓN DESKTOP PENDIENTE**. No es una reconstrucción de datos ni decisiones sobre niños reales.
-
-### Estado de esta evolución
-
-El trabajo histórico y la reconstrucción posterior se evalúan por separado. Las propuestas de seguridad y operación no acreditan funciones desplegadas durante mi experiencia laboral. No se publican capturas ni datos institucionales. Los documentos privados permiten contrastar el relato; las pruebas públicas corresponden exclusivamente a código nuevo y datos artificiales.
-
-## Evidencia de ejecución de la recreación
-
-![educacion: visor sintético verificado](../../imagenes/educacion_2026_verificada.jpg)
-
-Recreación técnica posterior (2026), no captura histórica. Captura real del visor web; Power BI Desktop pendiente. [Explorar la demo](https://ipizarroh.github.io/analitica-gestion-social/).
+Los datos de menores, contactos, fichas y listados se mantienen privados. No se publica ni una captura censurada por defecto. El beneficio esperado es separar calidad del registro de asistencia y hacer auditable la selección; mejorar asistencia o equidad de incentivos requeriría otro diseño de evaluación. **Estado: mantenimiento histórico confirmado; demo sintética verificada en Python/SQL/JavaScript; Excel y Power BI nativos pendientes.**

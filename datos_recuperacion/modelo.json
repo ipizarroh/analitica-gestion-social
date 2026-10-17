@@ -1,0 +1,1854 @@
+{
+  "DimPersona": [
+    {
+      "PersonaID": "PERSONA_SIM_001",
+      "TipoVinculo": "Práctica",
+      "Programa": "Sin resolver",
+      "Zona": "Sin resolver",
+      "Territorio": "Sin resolver",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 0
+    },
+    {
+      "PersonaID": "PERSONA_SIM_002",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 3",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 3",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_003",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 4",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 4",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_004",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 1",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 1",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_005",
+      "TipoVinculo": "Práctica",
+      "Programa": "Sin CRM",
+      "Zona": "Sin CRM",
+      "Territorio": "Sin CRM",
+      "EnCRM": 0,
+      "ConCurso": 1,
+      "AsignacionResuelta": 0
+    },
+    {
+      "PersonaID": "PERSONA_SIM_006",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 3",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 3",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_007",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 4",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 4",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_008",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 1",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 1",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_009",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 2",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 2",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_010",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Sin CRM",
+      "Zona": "Sin CRM",
+      "Territorio": "Sin CRM",
+      "EnCRM": 0,
+      "ConCurso": 1,
+      "AsignacionResuelta": 0
+    },
+    {
+      "PersonaID": "PERSONA_SIM_011",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 4",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 4",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_012",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 1",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 1",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_013",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 2",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 2",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_014",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 3",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 3",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_015",
+      "TipoVinculo": "Práctica",
+      "Programa": "Sin CRM",
+      "Zona": "Sin CRM",
+      "Territorio": "Sin CRM",
+      "EnCRM": 0,
+      "ConCurso": 1,
+      "AsignacionResuelta": 0
+    },
+    {
+      "PersonaID": "PERSONA_SIM_016",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 1",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 1",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_017",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 2",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 2",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_018",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 3",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 3",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_019",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 4",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 4",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_020",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Sin CRM",
+      "Zona": "Sin CRM",
+      "Territorio": "Sin CRM",
+      "EnCRM": 0,
+      "ConCurso": 1,
+      "AsignacionResuelta": 0
+    },
+    {
+      "PersonaID": "PERSONA_SIM_021",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 2",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 2",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_022",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 3",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 3",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_023",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 4",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 4",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_024",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 1",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 1",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_025",
+      "TipoVinculo": "Práctica",
+      "Programa": "Sin CRM",
+      "Zona": "Sin CRM",
+      "Territorio": "Sin CRM",
+      "EnCRM": 0,
+      "ConCurso": 1,
+      "AsignacionResuelta": 0
+    },
+    {
+      "PersonaID": "PERSONA_SIM_026",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 3",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 3",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_027",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 4",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 4",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_028",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 1",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 1",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_029",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 2",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 2",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_030",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Sin CRM",
+      "Zona": "Sin CRM",
+      "Territorio": "Sin CRM",
+      "EnCRM": 0,
+      "ConCurso": 1,
+      "AsignacionResuelta": 0
+    },
+    {
+      "PersonaID": "PERSONA_SIM_031",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 4",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 4",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_032",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 1",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 1",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_033",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 2",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 2",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_034",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 3",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 3",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_035",
+      "TipoVinculo": "Práctica",
+      "Programa": "Sin CRM",
+      "Zona": "Sin CRM",
+      "Territorio": "Sin CRM",
+      "EnCRM": 0,
+      "ConCurso": 1,
+      "AsignacionResuelta": 0
+    },
+    {
+      "PersonaID": "PERSONA_SIM_036",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 1",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 1",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_037",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 2",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 2",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_038",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 3",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 3",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_039",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 4",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 4",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_040",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Sin CRM",
+      "Zona": "Sin CRM",
+      "Territorio": "Sin CRM",
+      "EnCRM": 0,
+      "ConCurso": 1,
+      "AsignacionResuelta": 0
+    },
+    {
+      "PersonaID": "PERSONA_SIM_041",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 2",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 2",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_042",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 3",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 3",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_043",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 4",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 4",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_044",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 1",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 1",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_045",
+      "TipoVinculo": "Práctica",
+      "Programa": "Sin CRM",
+      "Zona": "Sin CRM",
+      "Territorio": "Sin CRM",
+      "EnCRM": 0,
+      "ConCurso": 1,
+      "AsignacionResuelta": 0
+    },
+    {
+      "PersonaID": "PERSONA_SIM_046",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 3",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 3",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_047",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 4",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 4",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_048",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 1",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 1",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_049",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 2",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 2",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_050",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Sin CRM",
+      "Zona": "Sin CRM",
+      "Territorio": "Sin CRM",
+      "EnCRM": 0,
+      "ConCurso": 1,
+      "AsignacionResuelta": 0
+    },
+    {
+      "PersonaID": "PERSONA_SIM_051",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 4",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 4",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_052",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 1",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 1",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_053",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 2",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 2",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_054",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 3",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 3",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_055",
+      "TipoVinculo": "Práctica",
+      "Programa": "Sin CRM",
+      "Zona": "Sin CRM",
+      "Territorio": "Sin CRM",
+      "EnCRM": 0,
+      "ConCurso": 1,
+      "AsignacionResuelta": 0
+    },
+    {
+      "PersonaID": "PERSONA_SIM_056",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 1",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 1",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_057",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 2",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 2",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_058",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 3",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 3",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_059",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 4",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 4",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_060",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Sin CRM",
+      "Zona": "Sin CRM",
+      "Territorio": "Sin CRM",
+      "EnCRM": 0,
+      "ConCurso": 1,
+      "AsignacionResuelta": 0
+    },
+    {
+      "PersonaID": "PERSONA_SIM_061",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 2",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 2",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_062",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 3",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 3",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_063",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 4",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 4",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_064",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 1",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 1",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_065",
+      "TipoVinculo": "Práctica",
+      "Programa": "Sin CRM",
+      "Zona": "Sin CRM",
+      "Territorio": "Sin CRM",
+      "EnCRM": 0,
+      "ConCurso": 1,
+      "AsignacionResuelta": 0
+    },
+    {
+      "PersonaID": "PERSONA_SIM_066",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 3",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 3",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_067",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 4",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 4",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_068",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 1",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 1",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_069",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 2",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 2",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_070",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Sin CRM",
+      "Zona": "Sin CRM",
+      "Territorio": "Sin CRM",
+      "EnCRM": 0,
+      "ConCurso": 1,
+      "AsignacionResuelta": 0
+    },
+    {
+      "PersonaID": "PERSONA_SIM_071",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 4",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 4",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_072",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 1",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 1",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_073",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 2",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 2",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_074",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 3",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 3",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_075",
+      "TipoVinculo": "Práctica",
+      "Programa": "Sin CRM",
+      "Zona": "Sin CRM",
+      "Territorio": "Sin CRM",
+      "EnCRM": 0,
+      "ConCurso": 1,
+      "AsignacionResuelta": 0
+    },
+    {
+      "PersonaID": "PERSONA_SIM_076",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 1",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 1",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_077",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 2",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 2",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_078",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 3",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 3",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_079",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 4",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 4",
+      "EnCRM": 1,
+      "ConCurso": 1,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_080",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Sin CRM",
+      "Zona": "Sin CRM",
+      "Territorio": "Sin CRM",
+      "EnCRM": 0,
+      "ConCurso": 1,
+      "AsignacionResuelta": 0
+    },
+    {
+      "PersonaID": "PERSONA_SIM_081",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 2",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 2",
+      "EnCRM": 1,
+      "ConCurso": 0,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_082",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 3",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 3",
+      "EnCRM": 1,
+      "ConCurso": 0,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_083",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 4",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 4",
+      "EnCRM": 1,
+      "ConCurso": 0,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_084",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 1",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 1",
+      "EnCRM": 1,
+      "ConCurso": 0,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_085",
+      "TipoVinculo": "Práctica",
+      "Programa": "Sin CRM",
+      "Zona": "Sin CRM",
+      "Territorio": "Sin CRM",
+      "EnCRM": 0,
+      "ConCurso": 0,
+      "AsignacionResuelta": 0
+    },
+    {
+      "PersonaID": "PERSONA_SIM_086",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 3",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 3",
+      "EnCRM": 1,
+      "ConCurso": 0,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_087",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 4",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 4",
+      "EnCRM": 1,
+      "ConCurso": 0,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_088",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 1",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 1",
+      "EnCRM": 1,
+      "ConCurso": 0,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_089",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 2",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 2",
+      "EnCRM": 1,
+      "ConCurso": 0,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_090",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Sin CRM",
+      "Zona": "Sin CRM",
+      "Territorio": "Sin CRM",
+      "EnCRM": 0,
+      "ConCurso": 0,
+      "AsignacionResuelta": 0
+    },
+    {
+      "PersonaID": "PERSONA_SIM_091",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 4",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 4",
+      "EnCRM": 1,
+      "ConCurso": 0,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_092",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 1",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 1",
+      "EnCRM": 1,
+      "ConCurso": 0,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_093",
+      "TipoVinculo": "Práctica",
+      "Programa": "Programa ficticio 2",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 2",
+      "EnCRM": 1,
+      "ConCurso": 0,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_094",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 3",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 3",
+      "EnCRM": 1,
+      "ConCurso": 0,
+      "AsignacionResuelta": 1
+    },
+    {
+      "PersonaID": "PERSONA_SIM_095",
+      "TipoVinculo": "Práctica",
+      "Programa": "Sin CRM",
+      "Zona": "Sin CRM",
+      "Territorio": "Sin CRM",
+      "EnCRM": 0,
+      "ConCurso": 0,
+      "AsignacionResuelta": 0
+    },
+    {
+      "PersonaID": "PERSONA_SIM_096",
+      "TipoVinculo": "Voluntariado",
+      "Programa": "Programa ficticio 1",
+      "Zona": "Zona ficticia 1",
+      "Territorio": "Territorio ficticio 1",
+      "EnCRM": 1,
+      "ConCurso": 0,
+      "AsignacionResuelta": 1
+    }
+  ],
+  "DimCurso": [
+    {
+      "CursoID": "CURSO_SIM_1",
+      "Curso": "Curso ficticio 1",
+      "Fin": "2026-04-20"
+    },
+    {
+      "CursoID": "CURSO_SIM_2",
+      "Curso": "Curso ficticio 2",
+      "Fin": "2026-05-20"
+    },
+    {
+      "CursoID": "CURSO_SIM_3",
+      "Curso": "Curso ficticio 3",
+      "Fin": "2026-06-20"
+    },
+    {
+      "CursoID": "CURSO_SIM_4",
+      "Curso": "Curso ficticio 4",
+      "Fin": "2026-07-20"
+    }
+  ],
+  "FactInscripcion": [
+    {
+      "InscripcionID": "INS_SIM_001",
+      "PersonaID": "PERSONA_SIM_001",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_002",
+      "PersonaID": "PERSONA_SIM_002",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_003",
+      "PersonaID": "PERSONA_SIM_003",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Sin avance",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_004",
+      "PersonaID": "PERSONA_SIM_004",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_005",
+      "PersonaID": "PERSONA_SIM_005",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_006",
+      "PersonaID": "PERSONA_SIM_006",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "En curso",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_007",
+      "PersonaID": "PERSONA_SIM_007",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "En curso",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_008",
+      "PersonaID": "PERSONA_SIM_008",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_009",
+      "PersonaID": "PERSONA_SIM_009",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_010",
+      "PersonaID": "PERSONA_SIM_010",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "En curso",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_011",
+      "PersonaID": "PERSONA_SIM_011",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_012",
+      "PersonaID": "PERSONA_SIM_012",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_013",
+      "PersonaID": "PERSONA_SIM_013",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_014",
+      "PersonaID": "PERSONA_SIM_014",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_015",
+      "PersonaID": "PERSONA_SIM_015",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_016",
+      "PersonaID": "PERSONA_SIM_016",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_017",
+      "PersonaID": "PERSONA_SIM_017",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_018",
+      "PersonaID": "PERSONA_SIM_018",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_019",
+      "PersonaID": "PERSONA_SIM_019",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_020",
+      "PersonaID": "PERSONA_SIM_020",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_021",
+      "PersonaID": "PERSONA_SIM_021",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_022",
+      "PersonaID": "PERSONA_SIM_022",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_023",
+      "PersonaID": "PERSONA_SIM_023",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_024",
+      "PersonaID": "PERSONA_SIM_024",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_025",
+      "PersonaID": "PERSONA_SIM_025",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_026",
+      "PersonaID": "PERSONA_SIM_026",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_027",
+      "PersonaID": "PERSONA_SIM_027",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_028",
+      "PersonaID": "PERSONA_SIM_028",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_029",
+      "PersonaID": "PERSONA_SIM_029",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_030",
+      "PersonaID": "PERSONA_SIM_030",
+      "CursoID": "CURSO_SIM_1",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_031",
+      "PersonaID": "PERSONA_SIM_031",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_032",
+      "PersonaID": "PERSONA_SIM_032",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "En curso",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_033",
+      "PersonaID": "PERSONA_SIM_033",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "En curso",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_034",
+      "PersonaID": "PERSONA_SIM_034",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "En curso",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_035",
+      "PersonaID": "PERSONA_SIM_035",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "Sin avance",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_036",
+      "PersonaID": "PERSONA_SIM_036",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "En curso",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_037",
+      "PersonaID": "PERSONA_SIM_037",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_038",
+      "PersonaID": "PERSONA_SIM_038",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_039",
+      "PersonaID": "PERSONA_SIM_039",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "En curso",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_040",
+      "PersonaID": "PERSONA_SIM_040",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_041",
+      "PersonaID": "PERSONA_SIM_041",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "Sin avance",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_042",
+      "PersonaID": "PERSONA_SIM_042",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_043",
+      "PersonaID": "PERSONA_SIM_043",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_044",
+      "PersonaID": "PERSONA_SIM_044",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_045",
+      "PersonaID": "PERSONA_SIM_045",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_046",
+      "PersonaID": "PERSONA_SIM_046",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_047",
+      "PersonaID": "PERSONA_SIM_047",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "Sin avance",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_048",
+      "PersonaID": "PERSONA_SIM_048",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_049",
+      "PersonaID": "PERSONA_SIM_049",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "En curso",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_050",
+      "PersonaID": "PERSONA_SIM_050",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_051",
+      "PersonaID": "PERSONA_SIM_051",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_052",
+      "PersonaID": "PERSONA_SIM_052",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_053",
+      "PersonaID": "PERSONA_SIM_053",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_054",
+      "PersonaID": "PERSONA_SIM_054",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "Sin avance",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_055",
+      "PersonaID": "PERSONA_SIM_055",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "Sin avance",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_056",
+      "PersonaID": "PERSONA_SIM_056",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_057",
+      "PersonaID": "PERSONA_SIM_057",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_058",
+      "PersonaID": "PERSONA_SIM_058",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "En curso",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_059",
+      "PersonaID": "PERSONA_SIM_059",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "En curso",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_060",
+      "PersonaID": "PERSONA_SIM_060",
+      "CursoID": "CURSO_SIM_2",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_061",
+      "PersonaID": "PERSONA_SIM_061",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_062",
+      "PersonaID": "PERSONA_SIM_062",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_063",
+      "PersonaID": "PERSONA_SIM_063",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "En curso",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_064",
+      "PersonaID": "PERSONA_SIM_064",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_065",
+      "PersonaID": "PERSONA_SIM_065",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_066",
+      "PersonaID": "PERSONA_SIM_066",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Sin avance",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_067",
+      "PersonaID": "PERSONA_SIM_067",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_068",
+      "PersonaID": "PERSONA_SIM_068",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_069",
+      "PersonaID": "PERSONA_SIM_069",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_070",
+      "PersonaID": "PERSONA_SIM_070",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Sin avance",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_071",
+      "PersonaID": "PERSONA_SIM_071",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_072",
+      "PersonaID": "PERSONA_SIM_072",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Sin avance",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_073",
+      "PersonaID": "PERSONA_SIM_073",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_074",
+      "PersonaID": "PERSONA_SIM_074",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_075",
+      "PersonaID": "PERSONA_SIM_075",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_076",
+      "PersonaID": "PERSONA_SIM_076",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Sin avance",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_077",
+      "PersonaID": "PERSONA_SIM_077",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "En curso",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_078",
+      "PersonaID": "PERSONA_SIM_078",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Sin avance",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_079",
+      "PersonaID": "PERSONA_SIM_079",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_080",
+      "PersonaID": "PERSONA_SIM_080",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Sin avance",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_081",
+      "PersonaID": "PERSONA_SIM_001",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Sin avance",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_082",
+      "PersonaID": "PERSONA_SIM_002",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "En curso",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_083",
+      "PersonaID": "PERSONA_SIM_003",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_084",
+      "PersonaID": "PERSONA_SIM_004",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Sin avance",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_085",
+      "PersonaID": "PERSONA_SIM_005",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_086",
+      "PersonaID": "PERSONA_SIM_006",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_087",
+      "PersonaID": "PERSONA_SIM_007",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_088",
+      "PersonaID": "PERSONA_SIM_008",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "En curso",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_089",
+      "PersonaID": "PERSONA_SIM_009",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_090",
+      "PersonaID": "PERSONA_SIM_010",
+      "CursoID": "CURSO_SIM_3",
+      "Estado": "Aprobado",
+      "Cerrado": 1
+    },
+    {
+      "InscripcionID": "INS_SIM_091",
+      "PersonaID": "PERSONA_SIM_011",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Aprobado",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_092",
+      "PersonaID": "PERSONA_SIM_012",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "En curso",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_093",
+      "PersonaID": "PERSONA_SIM_013",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Aprobado",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_094",
+      "PersonaID": "PERSONA_SIM_014",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Aprobado",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_095",
+      "PersonaID": "PERSONA_SIM_015",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Aprobado",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_096",
+      "PersonaID": "PERSONA_SIM_016",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Aprobado",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_097",
+      "PersonaID": "PERSONA_SIM_017",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Aprobado",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_098",
+      "PersonaID": "PERSONA_SIM_018",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Aprobado",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_099",
+      "PersonaID": "PERSONA_SIM_019",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Aprobado",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_100",
+      "PersonaID": "PERSONA_SIM_020",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Aprobado",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_101",
+      "PersonaID": "PERSONA_SIM_021",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Sin avance",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_102",
+      "PersonaID": "PERSONA_SIM_022",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Sin avance",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_103",
+      "PersonaID": "PERSONA_SIM_023",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Aprobado",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_104",
+      "PersonaID": "PERSONA_SIM_024",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Aprobado",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_105",
+      "PersonaID": "PERSONA_SIM_025",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Aprobado",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_106",
+      "PersonaID": "PERSONA_SIM_026",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Aprobado",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_107",
+      "PersonaID": "PERSONA_SIM_027",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "En curso",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_108",
+      "PersonaID": "PERSONA_SIM_028",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Aprobado",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_109",
+      "PersonaID": "PERSONA_SIM_029",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "En curso",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_110",
+      "PersonaID": "PERSONA_SIM_030",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "En curso",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_111",
+      "PersonaID": "PERSONA_SIM_031",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Aprobado",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_112",
+      "PersonaID": "PERSONA_SIM_032",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Aprobado",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_113",
+      "PersonaID": "PERSONA_SIM_033",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Aprobado",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_114",
+      "PersonaID": "PERSONA_SIM_034",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Aprobado",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_115",
+      "PersonaID": "PERSONA_SIM_035",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Aprobado",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_116",
+      "PersonaID": "PERSONA_SIM_036",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Aprobado",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_117",
+      "PersonaID": "PERSONA_SIM_037",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Aprobado",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_118",
+      "PersonaID": "PERSONA_SIM_038",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Sin avance",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_119",
+      "PersonaID": "PERSONA_SIM_039",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "En curso",
+      "Cerrado": 0
+    },
+    {
+      "InscripcionID": "INS_SIM_120",
+      "PersonaID": "PERSONA_SIM_040",
+      "CursoID": "CURSO_SIM_4",
+      "Estado": "Aprobado",
+      "Cerrado": 0
+    }
+  ],
+  "Cuarentena": [
+    {
+      "PersonaID": "PERSONA_SIM_001",
+      "Programa": "Programa ficticio 2",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 2",
+      "Desde": "2026-03-01",
+      "Motivo": "Concurrent associations require a business decision"
+    },
+    {
+      "PersonaID": "PERSONA_SIM_001",
+      "Programa": "Programa en conflicto",
+      "Zona": "Zona ficticia 2",
+      "Territorio": "Territorio ficticio 2",
+      "Desde": "2026-03-01",
+      "Motivo": "Concurrent associations require a business decision"
+    }
+  ],
+  "Corte": "2026-06-30",
+  "Controles": {
+    "duplicados_identicos_retirados": 1,
+    "personas_asignacion_ambigua": 1,
+    "registros_personas": 96,
+    "inscripciones": 120
+  },
+  "Naturaleza": "Recreación independiente de 2026; datos completamente inventados; no Power BI Desktop"
+}

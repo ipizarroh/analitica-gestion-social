@@ -1,0 +1,122 @@
+[
+  {
+    "filtros": {},
+    "resultado": {
+      "registrados": 96,
+      "en_crm": 77,
+      "sin_crm": 19,
+      "con_curso": 80,
+      "sin_curso": 16,
+      "inscripciones": 120,
+      "aprobadas": 83,
+      "por_vinculo": {
+        "Práctica": 48,
+        "Voluntariado": 48
+      }
+    }
+  },
+  {
+    "filtros": {
+      "EnCRM": 0
+    },
+    "resultado": {
+      "registrados": 19,
+      "en_crm": 0,
+      "sin_crm": 19,
+      "con_curso": 16,
+      "sin_curso": 3,
+      "inscripciones": 24,
+      "aprobadas": 18,
+      "por_vinculo": {
+        "Práctica": 10,
+        "Voluntariado": 9
+      }
+    }
+  },
+  {
+    "filtros": {
+      "ConCurso": 0
+    },
+    "resultado": {
+      "registrados": 16,
+      "en_crm": 13,
+      "sin_crm": 3,
+      "con_curso": 0,
+      "sin_curso": 16,
+      "inscripciones": 0,
+      "aprobadas": 0,
+      "por_vinculo": {
+        "Práctica": 8,
+        "Voluntariado": 8
+      }
+    }
+  },
+  {
+    "filtros": {
+      "Zona": "Zona ficticia 1"
+    },
+    "resultado": {
+      "registrados": 39,
+      "en_crm": 39,
+      "sin_crm": 0,
+      "con_curso": 32,
+      "sin_curso": 7,
+      "inscripciones": 48,
+      "aprobadas": 32,
+      "por_vinculo": {
+        "Voluntariado": 39
+      }
+    }
+  },
+  {
+    "filtros": {
+      "Programa": "Sin resolver"
+    },
+    "resultado": {
+      "registrados": 1,
+      "en_crm": 1,
+      "sin_crm": 0,
+      "con_curso": 1,
+      "sin_curso": 0,
+      "inscripciones": 2,
+      "aprobadas": 1,
+      "por_vinculo": {
+        "Práctica": 1
+      }
+    }
+  },
+  {
+    "filtros": {
+      "Zona": "SIN_COINCIDENCIAS"
+    },
+    "resultado": {
+      "registrados": 0,
+      "en_crm": 0,
+      "sin_crm": 0,
+      "con_curso": 0,
+      "sin_curso": 0,
+      "inscripciones": 0,
+      "aprobadas": 0,
+      "por_vinculo": {}
+    }
+  },
+  {
+    "filtros": {
+      "EnCRM": 1,
+      "ConCurso": 0
+    },
+    "resultado": {
+      "registrados": 13,
+      "en_crm": 13,
+      "sin_crm": 0,
+      "con_curso": 0,
+      "sin_curso": 13,
+      "inscripciones": 0,
+      "aprobadas": 0,
+      "por_vinculo": {
+        "Práctica": 6,
+        "Voluntariado": 7
+      }
+    }
+  }
+]

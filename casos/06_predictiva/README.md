@@ -1,60 +1,38 @@
-# Exploración predictiva del involucramiento
+# Exploración predictiva y medición de programas
 
-## Problema y trabajo declarado
+Desarrollé consolidación y exploración de información de programas con RStudio y Power BI, con supervisión y retroalimentación. Los documentos de análisis me identifican como analista y un script recuperado contiene mi nombre en su cabecera. Esta evidencia fortalece la participación acreditada, sin convertir automáticamente el modelo en una predicción validada.
 
-La iniciativa buscaba explorar el involucramiento futuro en programas. La documentación describe consolidación de variables y cruces analíticos, prototipos y uso de RStudio y Power BI. Menciona técnicas supervisadas como parte del trabajo relatado.
+**Evidencia histórica:** H08 y HC3-E06. Se recuperaron código R, documentos metodológicos, PBIX, consultas M, medidas y estructuras de datos. La referencia anterior a «ausencia de código original» queda corregida. También se corrige la evolución genérica de la fase 2: el objetivo documentado era el **conteo de practicantes y acuerdos de voluntariado por programa**, no una clasificación individual de inactividad a 60 días.
 
-## Alcance acreditable
+## Cómo lo desarrollé entonces y cómo lo abordaría hoy
 
-Las capturas y el texto respaldan la preparación de información y la existencia de una exploración. No se dispone de código original, conjunto de entrenamiento, partición temporal, línea base, hiperparámetros ni métricas de evaluación. Las afirmaciones de precisión del relato no pueden verificarse.
+### Problema, herramientas y fortalezas históricas
 
-No se presenta una regresión, árbol o red neuronal nueva como si fuera el modelo laboral original. Tampoco se publican variables internas, cantidades por programa ni predicciones históricas.
+Se buscaba explorar factores relacionados con el involucramiento y formular estimaciones para programas. Consolidé variables organizativas y operativas, exploré faltantes y correlaciones y preparé vistas de Power BI con jerarquías y segmentaciones. El código recuperado incluye imputación por medias, selección Boruta, partición aleatoria y regresión Poisson. Eso concreta parte del relato histórico; no confirma árboles o redes neuronales operativos para este proyecto por el solo hecho de aparecer en materiales académicos próximos.
 
-## Resultado y aprendizaje
+La fortaleza fue unir fuentes y traducir preguntas de gestión en exploración y consulta. La presencia de material universitario o de terceros dentro de la carpeta no se utiliza como autoría laboral propia.
 
-Trazabilidad H08: PARCIAL para exploración documentada; rendimiento, generalización y operación productiva NO ACREDITADOS. El aporte defendible es la integración de información y formulación de preguntas analíticas.
+### Limitaciones técnicas comprobadas en la revisión estática
 
-Una continuación actual requeriría definir unidad y horizonte, separar datos disponibles antes de la predicción, comparar contra una línea base y evaluar fuera de muestra. Son requisitos propuestos y no pruebas realizadas. La evidencia disponible no permite calificar este caso como machine learning senior.
+El archivo R calcula algunas métricas mezclando predicciones del conjunto completo con observaciones de prueba, y usa objetos que no están definidos dentro de ese archivo. Imputa y selecciona variables antes de separar entrenamiento/prueba. Estos hallazgos impiden aceptar sus métricas como evaluación reproducible fuera de muestra sin recuperar el contexto de sesión y corregir el flujo.
 
-## ¿Cómo lo abordaría hoy? Evolución técnica y profesional (2026)
+Además, el objetivo narrado de estimar un año posterior no queda demostrado por una respuesta construida con conteos del mismo período de los predictores. Un R² no es un porcentaje de precisión ni garantiza generalización. Las correlaciones y comparaciones entre programas no prueban efectos causales. Los documentos se conservan íntegros en privado; aquí se corrige su interpretación sin publicar valores internos.
 
-### Histórico y decisión actual
+### Arquitectura, KPI y evaluación que propondría hoy
 
-Mantendría la formulación de preguntas y preparación de información que desarrollé con RStudio y Power BI (págs. 32–37). El material no permite verificar precisión, entrenamiento ni generalización. Esa ausencia de evaluación es un límite demostrado de la evidencia disponible, no una prueba de que el modelo histórico fallara. Hoy no publicaría una supuesta solución predictiva validada sin etiqueta y evaluación defendibles.
+Definiría **FactProgramaPeriodo** con grano programa–año y una etiqueta de conteo en el horizonte siguiente; **DimPrograma** preservaría cambios organizativos y **FactEvaluacionModelo** registraría versión, corte, fold y métricas agregadas. No mezclaría practicantes individuales con acuerdos grupales ni beneficiarios atendidos.
 
-| Pregunta | Requisito | Viabilidad |
-|---|---|---|
-| ¿Puede anticiparse falta de actividad en próximos 60 días? | Definición de actividad, fecha de corte y ventana completa | Requiere datos y aprobación de propósito |
-| ¿Mejora una línea base de prevalencia? | Holdout temporal, etiqueta observada, métricas | Requiere experimento |
-| ¿La predicción debe decidir elegibilidad social? | Evaluación ética y garantías institucionales | No justificable con el caso |
+Primero verificaría que existen varios períodos y fechas de disponibilidad. Si solo hay un corte transversal, entregaría análisis descriptivo o validación entre programas, sin llamarla capacidad de pronosticar el año siguiente. Una línea base simple precedería a Poisson; contrastaría dispersión, exposición y exceso de ceros antes de aumentar complejidad.
 
-### Arquitectura y evaluación propuestas
+| Requisito / KPI | Prueba de aceptación |
+|---|---|
+| Horizonte y disponibilidad | Features conocidas al corte, etiqueta posterior observada |
+| MAE y desviación Poisson | Vectores con mismos IDs y longitudes; respuesta de conteo no negativa |
+| Comparación con baseline | Misma población y holdout intacto; no ajustar decisiones con test |
+| Cobertura y estabilidad | Reportar faltantes, programas nuevos y error por grupos comparables |
 
-```mermaid
-flowchart TD
-  C[Cortes temporales] --> X[Features disponibles al corte]
-  C --> Y[Etiqueta futura 60 días]
-  X --> E[Entrenamiento y validación temporal]
-  Y --> E
-  E --> H[Holdout posterior intacto]
-```
+Imputación y selección se ajustarían solo en entrenamiento dentro de cada partición. Las uniones no multiplicarían programas; el diccionario distinguiría conteos, capacidades y porcentajes. Las predicciones serían apoyo agregado a revisión humana, sin decisiones automáticas sobre prestaciones.
 
-Grano: persona elegible–corte. ETL congelaría features conocidas a esa fecha y construiría etiqueta solo después de completar 60 días de observación. Separar conjuntos por tiempo; si hay cortes repetidos por persona, probar además generalización a personas nuevas. Unir información futura, usar estado final o incluir un resultado intermedio produciría fuga. Mantener linaje de fechas y lista de columnas excluidas.
+### Implementación actual y límites
 
-Línea base: prevalencia o última actividad, comparada con regresión logística antes de modelos más complejos. Evaluar PR-AUC para desbalance, calibración/Brier y precisión–recall al presupuesto real de revisión; reportar intervalos y desempeño por grupos donde sea legítimo y seguro. El umbral dependería de costos y capacidad humana, no del mejor número en test. DAX serviría para supervisar resultados agregados y cobertura de etiquetas, no para probar capacidad predictiva. M comprobaría uniones por persona/corte sin expansión y que `fecha_feature <= corte`.
-
-### Riesgos, UX y mantenimiento
-
-No mostrar scores nominales públicos. Diseñar una vista de incertidumbre, cobertura, cambio de población y errores; revisión humana y derecho a corregir información. Un modelo no debe reducir acceso a prestaciones ni estigmatizar personas. Versionar población, features y etiqueta; detener recomendaciones ante drift o pérdida de cobertura hasta revisión.
-
-| Antes | Propuesta actual | Riesgo / trade-off | Prioridad y aceptación |
-|---|---|---|---|
-| Técnicas declaradas sin métricas replicables | Contrato de etiqueta + baseline | Puede concluir que no hay señal útil | P1: reproducir split y métricas sin fuga |
-| Vistas exploratorias | Holdout temporal intacto | Menos datos para entrenar | P1: no ajustar umbral en test |
-| Potencial de uso futuro | Revisión ética y humana | Limita automatización | P0: no decidir prestaciones automáticamente |
-
-Estado: **IDEA + DISEÑO**, sin implementación predictiva. Se eligió invertir el desarrollo verificable en reporting de Formación y Educación Inicial: los datos disponibles no sustentan entrenar ni evaluar un modelo histórico.
-
-### Estado de esta evolución
-
-El trabajo histórico y la reconstrucción posterior se evalúan por separado. Las propuestas de seguridad y operación no acreditan funciones desplegadas durante mi experiencia laboral. No se publican capturas ni datos institucionales. Los documentos privados permiten contrastar el relato; las pruebas públicas corresponden exclusivamente a código nuevo y datos artificiales.
+**Se recuperó y auditó código auténtico; no se ejecutó el R histórico ni se publicaron sus predicciones.** La nueva implementación funcional elegida es Formación, por su mayor completitud y menor riesgo. Este caso queda con diagnóstico y diseño de evaluación, sin inventar un modelo posterior para aparentar rendimiento. Se requieren datos temporales coherentes, dependencias de R, respuesta futura y un experimento reproducible antes de acreditar precisión o beneficio operativo.

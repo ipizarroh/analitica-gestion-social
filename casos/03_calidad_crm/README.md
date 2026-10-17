@@ -1,58 +1,32 @@
-# Calidad de información del CRM
+# Calidad y gobierno de información del CRM
 
-## Problema
+Analicé categorías de instituciones, preparé una propuesta de recategorización y participé en la revisión del piloto de autorregistro diseñado por TI. El alcance acreditado es análisis, propuesta y colaboración, sin atribuirme la implementación completa del sistema ni una mejora productiva cuantificada.
 
-La variedad de categorías institucionales y los registros incompletos dificultaban una lectura consistente de la vinculación. Se trabajó en propuestas de recategorización y en la revisión de un piloto de autorregistro.
+**Evidencia histórica:** H05 y HC3-E03. Se recuperaron documentos específicos de propuesta, análisis de categorías y avances del autorregistro, además del informe de trabajo. El contenido permite fortalecer la descripción del razonamiento y de los intercambios con TI; no prueba que la propuesta haya sido aplicada en producción.
 
-## Participación y método documentados
+## Cómo lo desarrollé entonces y cómo lo abordaría hoy
 
-Analicé comportamientos de categorías en Power BI y participé en reuniones con referentes del proceso para preparar una propuesta que se remitió a TI. En autorregistro revisé avances del diseño de solución entregado por TI junto con otras personas del equipo. No se atribuye desarrollo íntegro del sistema ni acceso directo autónomo al CRM.
+### Problema, responsabilidad y solución histórica
 
-El método consistió en examinar frecuencia y actividad por categoría, discutir agrupaciones y revisar la solución propuesta. Las tablas y reglas institucionales originales no se publican ni se transforman en un catálogo público.
+La diversidad de categorías y el uso de grupos poco específicos dificultaban analizar la vinculación. Exploré frecuencias y actividad en Power BI, discutí alternativas de agrupación y remití una propuesta. En el piloto revisé el diseño recibido de TI con el equipo; las reglas institucionales y los detalles del formulario permanecen privados.
 
-## Resultado, límites y aprendizajes
+La fortaleza fue tratar la clasificación como una decisión de gestión y no como simple formato. La limitación comprobada de la evidencia es que no hay una bitácora de despliegue, versiones aprobadas ni mediciones antes/después que permitan demostrar beneficios operativos. Los nuevos archivos no convierten una propuesta en implementación.
 
-Se acredita la propuesta y su comunicación, y la revisión de un diseño todavía en proceso. La implementación productiva, mejoras de completitud y reducción de tiempos no están acreditadas. Trazabilidad privada H05: CONFIRMADO como participación documental, efectos posteriores NO ACREDITADOS.
+### Arquitectura y mejora actual
 
-El caso demuestra que calidad requiere acuerdos semánticos y responsabilidad de mantenimiento. Para una implementación actual sería necesario versionar reglas, conservar valores de origen y medir cobertura de la clasificación. Son propuestas posteriores, no funcionalidades históricas demostradas.
+Definiría un catálogo de categorías con propietario, versión y vigencia; una correspondencia entre valor de origen y categoría aprobada; y **FactEvaluacionCalidad** con grano registro–regla–corte. Separaría el registro de institución de los resultados de cada regla. Los valores originales se conservarían en zona restringida y las propuestas de normalización serían reversibles.
 
-## ¿Cómo lo abordaría hoy? Evolución técnica y profesional (2026)
+El ETL verificaría claves y cobertura de la correspondencia, detectaría solapamientos de vigencia y conservaría desconocidos en cuarentena. Una categoría «otros» puede ser legítima: no se redistribuiría automáticamente para mejorar una tasa. La aprobación del catálogo correspondería al dueño del proceso; TI operaría el despliegue y su reversión.
 
-### Alcance histórico y diagnóstico
+| KPI propuesto | Criterio de cálculo / aceptación |
+|---|---|
+| Cobertura de clasificación | Registros con regla válida / registros evaluados al mismo corte |
+| Incumplimiento por regla | Registros distintos que fallan / registros elegibles; no contar filas de reglas como personas |
+| Excepciones pendientes | Casos abiertos, antigüedad y responsable, sin nombres públicos |
+| Reincidencia | Mismo defecto en cortes posteriores, controlando cambios del universo |
 
-Para referentes de vinculación y TI, mantendría la revisión colaborativa y la comunicación de propuestas de categorías (págs. 28–32). Mi aporte fue análisis y revisión del piloto diseñado por TI; no implementación integral del autorregistro. La falta de base y reglas versionadas disponibles impide medir defectos históricos. Una taxonomía gobernada es una oportunidad propuesta, no una reparación demostrada.
+### Pruebas, seguridad y límites
 
-| Pregunta actual | Requisito | Viabilidad |
-|---|---|---|
-| ¿Qué proporción puede clasificarse con reglas vigentes? | Valor origen, regla, versión, corte | Requiere datos y taxonomía aprobada |
-| ¿Dónde se concentran valores sin correspondencia? | ID registro y área responsable | Requiere extracción autorizada |
-| ¿Mejoró la captación tras recategorizar? | Seguimiento y diseño causal | No justificable con este material |
+Probaría entradas desconocidas, categorías legítimas sin actividad, versiones solapadas, reversión y conservación de claves. La conciliación exigida sería recibido = aceptado + cuarentena, sin eliminar errores silenciosamente. La vista de alertas no ejecutaría modificaciones en CRM; las acciones requerirían responsable y bitácora.
 
-### Diseño técnico propuesto
-
-```mermaid
-flowchart TD
-  R[DimReglaVersion] --> F[FactEvaluacionCalidad]
-  C[DimCorte] --> F
-  O[DimOrigen] --> F
-```
-
-Grano: registro–regla–corte, distinto de registro de institución. ETL conserva valor original en zona restringida, genera candidato normalizado y asigna categoría mediante tabla de correspondencia con fechas de vigencia. Los desconocidos se cuarentenan; no se inventa categoría para aumentar cobertura. `Registros evaluados = DISTINCTCOUNT(FactEvaluacionCalidad[registro_id])`; no contar filas de reglas como personas. `% incumplimiento regla = DIVIDE([Registros incumplen],[Registros evaluados])` solo en contexto de una regla y corte.
-
-Pruebas: vigencias no solapadas, una correspondencia por valor/corte, FK de regla, total recibido = aceptado + cuarentena y conservación de claves. Publicaría agregados seguros; el historial de corrección y contactos quedaría restringido. Responsable de negocio aprueba cambios y TI opera el catálogo. Cada actualización compararía tasas con el mismo universo, sin convertir corrección en eliminación silenciosa.
-
-### UX y decisiones
-
-Página de excepciones por regla con cantidad y porcentaje, responsable y estado de revisión; drillthrough restringido si contiene identidad. Navegación separada entre diagnóstico y acciones para evitar que una alerta ejecute cambios en CRM.
-
-| Antes | Propuesta actual | Riesgo / trade-off | Prioridad y aceptación |
-|---|---|---|---|
-| Propuesta remitida a TI | Catálogo aprobado versionado | Exige gobierno continuo | P1: ninguna regla sin dueño y vigencia |
-| Revisión de categorías | Cuarentena y conciliación | Puede reducir cobertura aparente | P1: sin registros perdidos |
-| Revisión del piloto | Pruebas y reversión | Más trabajo de liberación | P2: restaurar versión sin modificar RAW |
-
-Estado: **IDEA + DISEÑO**. Sin implementación sintética adicional ni validación Desktop; no se fabricó un CRM institucional.
-
-### Estado de esta evolución
-
-El trabajo histórico y la reconstrucción posterior se evalúan por separado. Las propuestas de seguridad y operación no acreditan funciones desplegadas durante mi experiencia laboral. No se publican capturas ni datos institucionales. Los documentos privados permiten contrastar el relato; las pruebas públicas corresponden exclusivamente a código nuevo y datos artificiales.
+La recreación de Formación implementa un control posterior de afiliaciones ambiguas como demostración acotada de cuarentena. **No implementa ni simula el autorregistro institucional.** El resto de este caso es diseño propuesto. Su beneficio esperado es trazabilidad y consistencia; medir reducción de reprocesos exige registros de operación reales y autorización específica. Los documentos y capturas recuperados no se publican.

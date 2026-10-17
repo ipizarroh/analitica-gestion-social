@@ -1,0 +1,94 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "name": "resumen",
+  "position": {
+    "x": 828,
+    "y": 570,
+    "width": 600,
+    "height": 315,
+    "z": 0,
+    "tabOrder": 14
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimPersona"
+                    }
+                  },
+                  "Property": "PersonaID"
+                }
+              },
+              "queryRef": "DimPersona.PersonaID",
+              "nativeQueryRef": "PersonaID"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimPersona"
+                    }
+                  },
+                  "Property": "Inscripciones"
+                }
+              },
+              "queryRef": "DimPersona.Inscripciones",
+              "nativeQueryRef": "Inscripciones"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimPersona"
+                    }
+                  },
+                  "Property": "Aprobadas"
+                }
+              },
+              "queryRef": "DimPersona.Aprobadas",
+              "nativeQueryRef": "Aprobadas"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimPersona"
+                    }
+                  },
+                  "Property": "En curso"
+                }
+              },
+              "queryRef": "DimPersona.En curso",
+              "nativeQueryRef": "En curso"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimPersona"
+                    }
+                  },
+                  "Property": "Sin avance"
+                }
+              },
+              "queryRef": "DimPersona.Sin avance",
+              "nativeQueryRef": "Sin avance"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

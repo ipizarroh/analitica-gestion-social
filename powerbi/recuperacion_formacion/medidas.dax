@@ -1,0 +1,22 @@
+// Código nuevo 2026; no código histórico. Validación nativa pendiente.
+Personas registradas = COALESCE(COUNTROWS(DimPersona), 0)
+
+Con CRM = CALCULATE([Personas registradas], KEEPFILTERS(DimPersona[EnCRM] = 1))
+
+Sin CRM = CALCULATE([Personas registradas], KEEPFILTERS(DimPersona[EnCRM] = 0))
+
+Con cursos = CALCULATE([Personas registradas], KEEPFILTERS(DimPersona[ConCurso] = 1))
+
+Sin cursos = CALCULATE([Personas registradas], KEEPFILTERS(DimPersona[ConCurso] = 0))
+
+Inscripciones = COALESCE(COUNTROWS(FactInscripcion), 0)
+
+Aprobadas = CALCULATE([Inscripciones], KEEPFILTERS(FactInscripcion[Estado] = "Aprobado"))
+
+En curso = CALCULATE([Inscripciones], KEEPFILTERS(FactInscripcion[Estado] = "En curso"))
+
+Sin avance = CALCULATE([Inscripciones], KEEPFILTERS(FactInscripcion[Estado] = "Sin avance"))
+
+Estado visible = SELECTEDVALUE(FactInscripcion[Estado])
+
+Cobertura CRM = DIVIDE([Con CRM], [Personas registradas])

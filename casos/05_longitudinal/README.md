@@ -1,57 +1,34 @@
-# Análisis longitudinal de cohortes y trayectorias
+# Trayectorias sociales: cohortes, episodios y mediciones
 
-## Necesidad y participación
+Construí vistas de ingresos, egresos y seguimiento sobre bases facilitadas por jefatura, con modificaciones colaborativas. No me atribuyo la construcción inicial de toda la base ni una evaluación causal de los programas.
 
-Se requería examinar evolución temporal, permanencia y composición de cohortes para apoyar análisis de gestión. Construí vistas de ingresos y egresos, columnas analíticas y tablas de seguimiento en colaboración con referentes del área. Para una parte del estudio, la tabla base provenía de jefatura y mi trabajo continuó sobre ella.
+**Evidencia histórica:** H07 y HC3-E05. A los resultados visuales del informe se suman libros con fórmulas y modelos, PBIX con árboles de descomposición y segmentaciones, documentos de criterios de filtrado y notas de reuniones de 2024. Acreditan trabajo y evolución de preguntas; su disponibilidad no prueba la autoría individual de todos los componentes ni cierre productivo.
 
-## Método documentado
+## Cómo lo desarrollé entonces y cómo lo abordaría hoy
 
-El informe describe cohortes definidas por año de ingreso, revisión de personas únicas, permanencia y observaciones sucesivas. Excel se menciona expresamente en el análisis de trayectorias. La documentación contiene resultados visuales privados, pero no bases ni código original suficientes para reproducirlos.
+### Problema, solución y colaboración histórica
 
-## Resultado y límites
+Se buscaba observar cómo cambiaban cohortes y condiciones a lo largo del tiempo, considerando ingreso, egreso, permanencia y mediciones sucesivas. Utilicé Excel y vistas analíticas con el equipo. El material de 2024 amplía la evidencia hacia comparación de mediciones y selección de población; las reuniones contienen decisiones y preguntas todavía abiertas.
 
-Se acredita una elaboración analítica con avances y salidas mostradas en el informe. Parte del relato todavía plantea pasos de cierre o réplica. No se declara un sistema productivo, una evaluación de impacto ni resultados causales. No se publican cifras ni variables personales sensibles, aunque aparezcan agregadas en la fuente.
+La fortaleza fue revisar temporalidad y hacer visibles trayectorias en vez de limitarse a un total transversal. La limitación comprobada es que algunos criterios excluyen personas sin medición inicial o con una sola medición: los cambios entre pares describen una población seleccionada y no a todos los participantes. También se documentan decisiones sobre observaciones por año; no se sustituyen por una regla inventada sin aprobación de negocio.
 
-Trazabilidad H07: PARCIAL para completitud y reproducibilidad. La lección transferible es definir cohorte, fecha de corte, reingresos y datos faltantes antes de interpretar cambios. Esos controles se proponen como mejora actual; no se atribuyen al código histórico ausente.
+El análisis de envejecimiento es una línea relacionada pero distinta: tiene notas propias de limpieza y preguntas sobre permanencia y deterioro. PADAM constituye otro flujo de medición, con manual y panel preexistentes; no se absorbe automáticamente dentro de este caso ni se atribuye su creación completa. Véase [material complementario](../../recuperacion_historica.md#material-complementario-y-atribución).
 
-## ¿Cómo lo abordaría hoy? Evolución técnica y profesional (2026)
+### Arquitectura y KPI actuales propuestos
 
-### Histórico y diagnóstico
+Separaría **FactEpisodio** (persona–programa–fecha de ingreso), **FactObservacion** (episodio–fecha–instrumento) y dimensiones de programa, instrumento, fecha y persona restringida. Un reingreso generaría otro episodio. La versión del instrumento y las reglas de homologación serían explícitas.
 
-Para analistas y referentes de programas, mantendría cohortes explícitas y el trabajo colaborativo sobre bases facilitadas por jefatura. El informe (págs. 46–50) acredita elaboración de vistas y modificaciones, con tareas de cierre o réplica todavía pendientes. La completitud/reproducibilidad histórica es parcial; no hay evidencia suficiente para declarar un error numérico concreto.
+| Pregunta / KPI | Condición necesaria |
+|---|---|
+| Seguimiento a una ventana | Elegibles que alcanzaron la ventana al corte; observados y no observados visibles |
+| Cambio entre mediciones | Pares comparables, intervalo y número de pares; no rellenar faltantes con cero |
+| Permanencia | Distinguir egreso observado de episodio vigente censurado |
+| Sesgo de seguimiento | Comparar cobertura de pares entre cohortes y programas, sin conclusiones causales |
 
-| Pregunta | Datos requeridos | Viabilidad |
-|---|---|---|
-| ¿Qué proporción de una cohorte sigue observada al mes 6? | Episodios, observaciones y corte | Requiere base longitudinal y definición |
-| ¿Cómo tratar reingresos y pérdida de seguimiento? | ID persona, episodio, causa de egreso | Requiere acuerdo de negocio |
-| ¿El programa causó una mejora? | Evaluación y grupo comparable | No justificable con estas vistas |
+El ETL conservaría las exclusiones con motivo, normalizaría fechas, validaría secuencias y registraría instrumento/versión. No aplicaría el último estado disponible a todas las cohortes pasadas. Los faltantes y pérdidas de seguimiento se mostrarían como cobertura, no como ausencia de cambio.
 
-### Diseño propuesto
+### Calidad, seguridad y pruebas de aceptación
 
-```mermaid
-flowchart TD
-  P[DimPersonaRestringida] --> E[FactEpisodio]
-  G[DimPrograma] --> E
-  E --> O[FactObservacion]
-  F[DimFechaObservacion] --> O
-```
+Exigiría unicidad de episodios/observaciones, ingreso <= egreso, temporalidad coherente, reingresos conservados y total de personas reconciliado con episodios sin sumarlos como equivalentes. Reproduciría cada exclusión desde RAW y compararía cálculos contra SQL independiente. Los árboles de descomposición sirven para explorar, sin demostrar impacto.
 
-Granos: episodio persona–programa–ingreso; observación episodio–fecha–instrumento. Una cohorte no se define por última visita. ETL validaría intervalos, vigencias e instrumento, conservaría reingresos como episodios distintos y documentaría censura a derecha. DAX propuesto: `Cobertura seguimiento = DIVIDE([Episodios con observación a ventana],[Episodios elegibles a ventana])`; no usar todos los ingresados si algunos aún no alcanzan la ventana. El cambio medio se calcularía solo sobre pares comparables y con conteo de pares visible, sin rellenar faltantes con cero.
-
-Pruebas: inicio <= egreso, observación dentro del episodio, claves únicas, cohortes reconciliadas, observaciones faltantes explícitas y exclusión de seguimiento posterior al corte. Separaría fechas de ingreso y observación para no activar caminos ambiguos. Identidades y variables sensibles quedarían fuera del reporte de portafolio; actualizaciones bajo permisos y revisión de comparabilidad de instrumentos.
-
-### UX y operación
-
-Matriz cohorte–mes con elegibles y observados, curva descriptiva con nota de censura, tabla de pérdida de seguimiento. No dibujar un ranking de mejora sin cobertura y comparabilidad. Revisar mensualmente reglas de reingreso y cambios de instrumento.
-
-| Antes | Propuesta actual | Riesgo / trade-off | Prioridad y aceptación |
-|---|---|---|---|
-| Vistas y análisis colaborativo | Episodios e instrumentos separados | Modelo más complejo | P1: un reingreso no sobrescribe el ingreso previo |
-| Observaciones disponibles | Ventanas y censura | Menos pares utilizables | P1: elegibles al corte verificables |
-| Avance parcial | Dataset versionado reproducible | Requiere bases originales | P2: totales replicables desde RAW |
-
-Estado: **IDEA + DISEÑO**. Sin implementación ni inferencia de resultados institucionales.
-
-### Estado de esta evolución
-
-El trabajo histórico y la reconstrucción posterior se evalúan por separado. Las propuestas de seguridad y operación no acreditan funciones desplegadas durante mi experiencia laboral. No se publican capturas ni datos institucionales. Los documentos privados permiten contrastar el relato; las pruebas públicas corresponden exclusivamente a código nuevo y datos artificiales.
+Los resultados originales y variables sociales permanecen privados. El beneficio esperado es comparar poblaciones y ventanas de forma defendible; la cobertura incompleta y los cambios de instrumentos seguirían limitando interpretaciones. **Estado: evidencia técnica recuperada y revisión retrospectiva; arquitectura propuesta, sin nueva implementación longitudinal ni validación Desktop.**

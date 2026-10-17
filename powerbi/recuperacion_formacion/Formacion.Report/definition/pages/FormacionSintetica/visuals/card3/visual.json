@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "name": "card3",
+  "position": {
+    "x": 864,
+    "y": 64,
+    "width": 272,
+    "height": 95,
+    "z": 0,
+    "tabOrder": 4
+  },
+  "visual": {
+    "visualType": "card",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimPersona"
+                    }
+                  },
+                  "Property": "Con cursos"
+                }
+              },
+              "queryRef": "DimPersona.Con cursos",
+              "nativeQueryRef": "Con cursos"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

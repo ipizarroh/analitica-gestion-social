@@ -1,6 +1,6 @@
 # Fuentes y límites
 
-La fuente principal es un informe académico privado de experiencia laboral, de 51 páginas, con capturas históricas. Existe además un CV complementario. No se cuenta con bases originales CRM, XLSX, CSV, PBIX ni código histórico de esta experiencia.
+La fuente principal es un informe académico privado de experiencia laboral, de 51 páginas, con capturas históricas. Existe además un CV complementario. En la fase 3 se incorporaron materiales históricos autorizados para análisis privado: libros, CSV, PBIX, código R, DAX/M recuperado y documentos de trabajo. La matriz actualizada consta en [recuperación histórica](recuperacion_historica.md). Siete archivos siguen sin recuperación de bytes por límites o errores del conector; la inspección de libros es estructural y acotada, no certificación de todos sus registros.
 
 El período detallado es principalmente junio de 2022 a febrero de 2024. El resumen declara continuidad hasta junio de 2024 sin detallar los últimos meses. La portada interior tiene una fecha discordante con la presentación y el cuerpo; se anotó en la auditoría privada y no se utilizó para extender la cronología.
 
