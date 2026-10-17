@@ -29,6 +29,11 @@ class Evolucion(unittest.TestCase):
             if s['corte']>'2026-04-30':s['estado']='Aprobado'
         self.assertEqual(antes,formacion(d,'2026-04-30'))
         with self.assertRaises(ValueError):formacion(d,'2026-07-31')
+    def test_inscripcion_no_posterior_al_cierre_demo(self):
+        cursos={c['curso_id']:c for c in self.d['cursos']}
+        self.assertTrue(all(i['fecha_inscripcion']<=cursos[i['curso_id']]['fin'] for i in self.d['inscripciones']))
+        d=copy.deepcopy(self.d);d['inscripciones'][0]['fecha_inscripcion']='2026-04-21'
+        with self.assertRaises(ValueError):formacion_etl(d)
     def test_no_suma_personas_entre_cursos(self):
         g=formacion(self.d,CORTES[-1]);suma=sum(formacion(self.d,CORTES[-1],c['curso_id'])['personas'] for c in self.d['cursos']);self.assertGreater(suma,g['personas'])
         self.assertIsNone(formacion(self.d,CORTES[0],'CURSO_SIM_4')['aprobacion_curso_cerrado'])

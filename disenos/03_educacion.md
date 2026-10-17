@@ -14,10 +14,10 @@ Modelo estrella: DimPrograma(programa_id), DimFecha(fecha), DimParticipante(part
 | Asistencia observada | Presente | Presente + Ausente | BLANK/None |
 | Asistencia sobre esperadas | Presente | Jornadas esperadas | BLANK/None |
 
-El ejemplo tiene 336 jornadas esperadas: 265 presentes + 49 ausentes + 22 sin registro. Cobertura 314/336, asistencia observada 265/314; su producto concilia con 265/336. Son magnitudes inventadas, sin significado institucional.
+El ejemplo tiene 336 jornadas esperadas: 259 presentes + 51 ausentes + 26 sin registro. Cobertura 310/336, asistencia observada 259/310; su producto concilia con 259/336. Son magnitudes inventadas, sin significado institucional.
 
 Pruebas: duplicado participante–fecha bloqueado; observación huérfana bloqueada; cierre del 10 de junio sin denominador; suma por programa concilia total; estados exhaustivos. La demo anterior de muestreo sigue separada: una selección de apoyo no equivale a representatividad estadística.
 
 UX: primero pendientes y cobertura, luego asistencia, tabla con bases y fecha de corte. Evitar ranking por asistencia si la cobertura es distinta. Seguridad real requeriría minimización, permisos, supresión de grupos pequeños y reglas de exportación; no se implementa RLS ficticio. Calendarista y responsable de programa aprueban correcciones; cada carga debe conciliar universo y observaciones.
 
-Aceptación Desktop futura: cargar CSV, verificar 336/314/265, seleccionar programa y fecha, comprobar que días cerrados devuelven ausencia de base; comparar con `datos_evolucion/controles.json`. [M/DAX preparados](../powerbi/evolucion/), aún sin ejecución nativa.
+Aceptación Desktop futura: cargar CSV, verificar 336/310/259, seleccionar programa y fecha, comprobar que días cerrados devuelven ausencia de base; comparar con `datos_evolucion/controles.json`. [M/DAX preparados](../powerbi/evolucion/), aún sin ejecución nativa.

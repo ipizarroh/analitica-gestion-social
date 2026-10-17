@@ -1,30 +1,30 @@
 {
   "formacion": {
     "2026-04-30": {
-      "inscripciones": 105,
-      "personas": 73,
+      "inscripciones": 109,
+      "personas": 74,
       "estados": {
-        "Aprobado": 18,
-        "En curso": 54,
-        "Sin avance": 33
+        "Aprobado": 20,
+        "En curso": 59,
+        "Sin avance": 30
       },
-      "inscripciones_curso_cerrado": 27,
-      "aprobadas_curso_cerrado": 7,
-      "aprobacion_curso_cerrado": 0.25925925925925924,
-      "personas_con_crm_demo": 57,
-      "cobertura_crm_demo": 0.7808219178082192
+      "inscripciones_curso_cerrado": 30,
+      "aprobadas_curso_cerrado": 9,
+      "aprobacion_curso_cerrado": 0.3,
+      "personas_con_crm_demo": 58,
+      "cobertura_crm_demo": 0.7837837837837838
     },
     "2026-05-31": {
       "inscripciones": 120,
       "personas": 80,
       "estados": {
-        "Aprobado": 50,
-        "En curso": 50,
-        "Sin avance": 20
+        "Aprobado": 51,
+        "En curso": 52,
+        "Sin avance": 17
       },
       "inscripciones_curso_cerrado": 60,
-      "aprobadas_curso_cerrado": 28,
-      "aprobacion_curso_cerrado": 0.4666666666666667,
+      "aprobadas_curso_cerrado": 27,
+      "aprobacion_curso_cerrado": 0.45,
       "personas_con_crm_demo": 64,
       "cobertura_crm_demo": 0.8
     },
@@ -32,25 +32,25 @@
       "inscripciones": 120,
       "personas": 80,
       "estados": {
-        "Aprobado": 79,
-        "En curso": 21,
-        "Sin avance": 20
+        "Aprobado": 83,
+        "En curso": 20,
+        "Sin avance": 17
       },
       "inscripciones_curso_cerrado": 90,
-      "aprobadas_curso_cerrado": 60,
-      "aprobacion_curso_cerrado": 0.6666666666666666,
+      "aprobadas_curso_cerrado": 61,
+      "aprobacion_curso_cerrado": 0.6777777777777778,
       "personas_con_crm_demo": 64,
       "cobertura_crm_demo": 0.8
     }
   },
   "educacion": {
     "jornadas_esperadas": 336,
-    "registros_recibidos": 314,
-    "presentes": 265,
-    "ausentes": 49,
-    "sin_registro": 22,
-    "cobertura": 0.9345238095238095,
-    "asistencia_observada": 0.8439490445859873,
-    "asistencia_sobre_esperadas": 0.7886904761904762
+    "registros_recibidos": 310,
+    "presentes": 259,
+    "ausentes": 51,
+    "sin_registro": 26,
+    "cobertura": 0.9226190476190477,
+    "asistencia_observada": 0.8354838709677419,
+    "asistencia_sobre_esperadas": 0.7708333333333334
   }
 }

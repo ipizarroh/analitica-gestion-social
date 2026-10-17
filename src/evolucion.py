@@ -14,7 +14,8 @@ def generar(seed=20261016):
     inscripciones=[];seguimiento=[]
     for i in range(1,121):
         persona=personas[(i-1)%80]['persona_id'];curso=cursos[(i-1)//30]
-        fecha=date(2026,3,1)+timedelta(days=r.randrange(70))
+        limite=min(70,(date.fromisoformat(curso['fin'])-date(2026,3,1)).days+1)
+        fecha=date(2026,3,1)+timedelta(days=r.randrange(limite))
         ins={'inscripcion_id':f'INS_SIM_{i:03}','persona_id':persona,'curso_id':curso['curso_id'],'fecha_inscripcion':fecha.isoformat()};inscripciones.append(ins)
         umbral=r.randrange(15,100);abandona=r.random()<.15
         for corte in CORTES:
@@ -46,6 +47,7 @@ def formacion_etl(d):
         keys.add(k)
         if s['inscripcion_id'] not in ins:raise ValueError('Snapshot huérfano')
         i=ins[s['inscripcion_id']]
+        if i['fecha_inscripcion']>cur[i['curso_id']]['fin']:raise ValueError('Inscripción posterior al cierre del curso demo')
         if s['corte']<i['fecha_inscripcion']:raise ValueError('Snapshot anterior a inscripción')
         if s['estado'] not in ['Aprobado','En curso','Sin avance']:raise ValueError('Estado desconocido')
         out.append({**i,**s,'curso_cerrado_al_corte':cur[i['curso_id']]['fin']<=s['corte']})

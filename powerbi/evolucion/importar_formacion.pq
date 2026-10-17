@@ -10,7 +10,7 @@ let
     JoinCurso = Table.NestedJoin(Expandir, {"curso_id"}, Cursos, {"curso_id"}, "Curso", JoinKind.LeftOuter),
     CardinalidadCurso = if List.AllTrue(List.Transform(JoinCurso[Curso], each Table.RowCount(_) = 1)) then JoinCurso else error "FK curso",
     FinCurso = Table.ExpandTableColumn(CardinalidadCurso, "Curso", {"fin"}, {"fin_curso"}),
-    Temporal = if Table.RowCount(Table.SelectRows(FinCurso, each [corte] < [fecha_inscripcion])) = 0 then FinCurso else error "Fuga temporal",
+    Temporal = if Table.RowCount(Table.SelectRows(FinCurso, each [corte] < [fecha_inscripcion] or [fecha_inscripcion] > [fin_curso])) = 0 then FinCurso else error "Fuga temporal",
     Unico = if Table.RowCount(Table.Distinct(Temporal, {"inscripcion_id", "corte"})) = Table.RowCount(Temporal) then Temporal else error "Snapshot duplicado",
     Cerrado = Table.AddColumn(Unico, "curso_cerrado_al_corte", each [fin_curso] <= [corte], type logical)
 in
