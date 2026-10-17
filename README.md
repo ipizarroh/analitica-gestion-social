@@ -12,6 +12,8 @@ La recuperación histórica permitió examinar **21 PBIX originales y otras once
 
 La recreación conserva cinco indicadores, cinco filtros, tres tablas y una distribución por vínculo. Añade resolución de afiliaciones al corte y cuarentena de conflictos. **Es una implementación web independiente de 2026; no una captura histórica ni una validación de Power BI Desktop.**
 
+![Recreación independiente de Formación con datos inventados](imagenes/formacion_fase3_total.jpg)
+
 ## Seis casos y mi contribución
 
 | Caso | Trabajo histórico acreditado | Evidencia y evolución actual |
