@@ -15,4 +15,11 @@ La extracción privada de modelos se realizó localmente con PBIXRay 0.15.5, de 
 
 La revisión de publicación compara identificadores/rutas de fuentes, inspecciona contenido y bloquea originales, contactos y secretos. Es un control técnico y editorial, sin certificar derechos de publicación de los originales, que quedan excluidos. Las capturas publicadas son solo de demostraciones sintéticas posteriores.
 
-Los resultados remotos de esta fase se añaden tras publicar y verificar. Véase [historial de cambios](CHANGELOG.md) y [protocolo Desktop](powerbi/recuperacion_formacion/README.md).
+Publicación verificada: [PR #3](https://github.com/ipizarroh/analitica-gestion-social/pull/3), merge `89044d7aa3d15277d49d79e251515c9d11b5209a`, [CI aprobada](https://github.com/ipizarroh/analitica-gestion-social/actions/runs/39005905954). Un clon anónimo reprodujo las 25 pruebas y ambas paridades. En navegador se conciliaron ocho estados de indicadores, se cambió la agrupación y se exportaron 16 filas sin cursos; no se observaron errores de aplicación, y los avisos de extensión se conservaron por separado. Véase [historial de cambios](CHANGELOG.md) y [protocolo Desktop](powerbi/recuperacion_formacion/README.md).
+
+
+![Recreación sintética publicada, vista general](imagenes/formacion_fase3_total.jpg)
+
+![Filtro de personas sin cursos, datos inventados](imagenes/formacion_fase3_sin_cursos.jpg)
+
+Capturas reales del visor web publicado. No son capturas institucionales ni render de Power BI Desktop.
