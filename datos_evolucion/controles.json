@@ -1,0 +1,56 @@
+{
+  "formacion": {
+    "2026-04-30": {
+      "inscripciones": 109,
+      "personas": 74,
+      "estados": {
+        "Aprobado": 20,
+        "En curso": 59,
+        "Sin avance": 30
+      },
+      "inscripciones_curso_cerrado": 30,
+      "aprobadas_curso_cerrado": 9,
+      "aprobacion_curso_cerrado": 0.3,
+      "personas_con_crm_demo": 58,
+      "cobertura_crm_demo": 0.7837837837837838
+    },
+    "2026-05-31": {
+      "inscripciones": 120,
+      "personas": 80,
+      "estados": {
+        "Aprobado": 51,
+        "En curso": 52,
+        "Sin avance": 17
+      },
+      "inscripciones_curso_cerrado": 60,
+      "aprobadas_curso_cerrado": 27,
+      "aprobacion_curso_cerrado": 0.45,
+      "personas_con_crm_demo": 64,
+      "cobertura_crm_demo": 0.8
+    },
+    "2026-06-30": {
+      "inscripciones": 120,
+      "personas": 80,
+      "estados": {
+        "Aprobado": 83,
+        "En curso": 20,
+        "Sin avance": 17
+      },
+      "inscripciones_curso_cerrado": 90,
+      "aprobadas_curso_cerrado": 61,
+      "aprobacion_curso_cerrado": 0.6777777777777778,
+      "personas_con_crm_demo": 64,
+      "cobertura_crm_demo": 0.8
+    }
+  },
+  "educacion": {
+    "jornadas_esperadas": 336,
+    "registros_recibidos": 310,
+    "presentes": 259,
+    "ausentes": 51,
+    "sin_registro": 26,
+    "cobertura": 0.9226190476190477,
+    "asistencia_observada": 0.8354838709677419,
+    "asistencia_sobre_esperadas": 0.7708333333333334
+  }
+}

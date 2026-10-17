@@ -1,0 +1,8 @@
+// Requiere DimCorte[corte] seleccionado único. Especificación no ejecutada en Desktop.
+Inscripciones al corte = IF(HASONEVALUE(DimCorte[corte]), COALESCE(COUNTROWS(FactSeguimiento), 0))
+Personas al corte = IF(HASONEVALUE(DimCorte[corte]), COALESCE(DISTINCTCOUNT(FactSeguimiento[persona_id]), 0))
+Inscripciones cursos cerrados = IF(HASONEVALUE(DimCorte[corte]), CALCULATE(COALESCE(COUNTROWS(FactSeguimiento), 0), KEEPFILTERS(FactSeguimiento[curso_cerrado_al_corte] = TRUE())))
+Aprobadas cursos cerrados = IF(HASONEVALUE(DimCorte[corte]), CALCULATE(COALESCE(COUNTROWS(FactSeguimiento), 0), KEEPFILTERS(FactSeguimiento[curso_cerrado_al_corte] = TRUE()), KEEPFILTERS(FactSeguimiento[estado] = "Aprobado")))
+Aprobación cursos cerrados = DIVIDE([Aprobadas cursos cerrados], [Inscripciones cursos cerrados])
+Personas con CRM demo = IF(HASONEVALUE(DimCorte[corte]), CALCULATE(COALESCE(DISTINCTCOUNT(FactSeguimiento[persona_id]), 0), KEEPFILTERS(DimPersona[registro_crm_demo] = TRUE())))
+Cobertura CRM demo = DIVIDE([Personas con CRM demo], [Personas al corte])

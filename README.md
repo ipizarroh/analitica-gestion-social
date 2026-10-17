@@ -1,38 +1,39 @@
-# Analítica para la gestión social
+# Analítica para la gestión social · Hogar de Cristo
 
-**Ignacio Pizarro Hurtado · Excel, Power BI y calidad de información**
+**Ignacio Pizarro Hurtado · Power BI · Excel · ETL · calidad de información**
 
-Este portafolio presenta seis casos de mi experiencia en Fundación Hogar de Cristo. El foco es cómo convertí necesidades de las áreas usuarias en análisis, prototipos y reportería, y cómo participé en la actualización y revisión de soluciones existentes.
+Desarrollé análisis, prototipos y dashboards para las áreas usuarias, colaboré con BI/TI y actualicé reportes preexistentes. Estos seis casos documentan mi contribución real y explican cómo abordaría hoy sus decisiones de datos y gestión. La evidencia detallada cubre principalmente junio de 2022–febrero de 2024; el vínculo continuó hasta junio de 2024 según el resumen documental. La evolución de 2026 es posterior.
 
-La documentación histórica revisada cubre principalmente junio de 2022 a febrero de 2024. El vínculo continuó hasta junio de 2024 según el resumen documental; los últimos meses no tienen el mismo detalle de evidencia. No se publican documentos ni capturas institucionales.
+![Formación: recreación técnica posterior verificada](imagenes/formacion_2026_verificada.jpg)
 
-## Tres casos principales
+*Visor web con datos inventados: recreación técnica posterior (2026), no captura histórica ni Power BI Desktop.*
 
-| Caso | Aporte documentado |
-|---|---|
-| [Vinculación institucional y Enredados](casos/01_vinculacion/README.md) | Requerimientos, ETL, prototipos y navegación con botones y marcadores |
-| [Escuela de Formación](casos/02_formacion/README.md) | Seguimiento de participación, cursos e identificación de inactividad |
-| [Educación Inicial](casos/04_educacion_inicial/README.md) | Limpieza, actualización de libros preexistentes y apoyo al muestreo |
+## Recorrido por los seis casos
 
-## Otros casos con alcance acotado
+| Caso | Mi contribución acreditada | Evolución 2026 |
+|---|---|---|
+| [Vinculación / Enredados](casos/01_vinculacion/README.md) | Requerimientos, preparación de extractos recibidos, prototipos, botones y marcadores | [Diseño profundo](disenos/01_enredados.md), control de multiplicidad |
+| [Escuela de Formación](casos/02_formacion/README.md) | Reporterías y prototipos; identificación de inactividad para revisión | [Diseño y demo](disenos/02_formacion.md), snapshots y cohortes maduras |
+| [Calidad CRM](casos/03_calidad_crm/README.md) | Análisis y propuesta enviada a TI; revisión colaborativa de piloto | Reglas versionadas, cuarentena y responsabilidad |
+| [Educación Inicial](casos/04_educacion_inicial/README.md) | Actualización de libros previos, apoyo al muestreo y navegación propia | [Diseño y demo](disenos/03_educacion.md), universo esperado y cobertura |
+| [Trayectorias longitudinales](casos/05_longitudinal/README.md) | Elaboración colaborativa sobre bases facilitadas por jefatura | Episodios, ventanas, censura y comparabilidad |
+| [Exploración predictiva](casos/06_predictiva/README.md) | Cruces y exploración documentados con RStudio/Power BI | Etiqueta, fuga temporal y evaluación como propuesta; sin modelo validado |
 
-- [Calidad de información del CRM](casos/03_calidad_crm/README.md): propuestas y revisión colaborativa de un piloto.
-- [Análisis longitudinal](casos/05_longitudinal/README.md): cohortes, permanencia y evolución, con límites de completitud.
-- [Exploración predictiva](casos/06_predictiva/README.md): consolidación y exploración declaradas, sin código histórico ni métricas verificables.
+Cada caso incluye **«¿Cómo lo abordaría hoy? Evolución técnica y profesional (2026)»**, con decisiones, datos faltantes, riesgos y aceptación. No se atribuye despliegue a la aceptación de un prototipo, bajas a la identificación de inactivos ni impacto causal a comparaciones temporales.
 
-## Evidencia que se puede revisar públicamente
+## Evidencia técnica actual
 
-![Ejemplo inventado de formación](imagenes/formacion.svg)
+[**Explorar las dos demos**](https://ipizarroh.github.io/analitica-gestion-social/) · [HTML autocontenido](demo/index.html) · [DAX/M](powerbi/evolucion/) · [Datos y controles](datos_evolucion/) · [Reproducción](demostraciones.md)
 
-**Demostración sintética posterior, creada en octubre de 2026.** La imagen y el código no son entregables laborales históricos. Se incluyen dos ejemplos nuevos y reproducibles: seguimiento de formación y selección de una muestra por programa. No usan datos, cifras, distribuciones ni registros del empleador.
+Formación separa personas de inscripciones y calcula estados al corte sin usar información futura. Educación Inicial construye las jornadas esperadas y distingue ausencia de falta de registro. Las pruebas comprueban granos, FK, fechas, denominadores y conciliación; el visor permite filtrar y revisar las filas.
 
 ```bash
-python src/demostracion.py
+python src/evolucion.py
+python src/construir_web.py
 python -m unittest discover -s tests -v
+node tests/test_web.mjs
 ```
 
-Los casos separan desarrollo propio, colaboración con BI/TI y mantenimiento. Aceptación de prototipos no se interpreta como despliegue productivo; identificación de inactivos no implica deshabilitación. La cantidad de reportes no acredita seniority.
+Las demos Python/JavaScript son nuevas y reproducibles con datos completamente inventados. **DAX/M y Desktop: validación nativa pendiente.** No existen PBIX ni bases históricos de HC entre las fuentes recibidas. Los diseños profundos explican el modelo y sus criterios, sin presentarlos como código laboral recuperado.
 
-[Metodología](metodologia.md) · [Fuentes y límites](fuentes_y_limites.md) · [Demostraciones](demostraciones.md) · [Autoría](AUTORIA_Y_USO.md) · [Verificación](VERIFICACION.md)
-
-Portafolio personal sin afiliación, respaldo ni carácter oficial de la organización mencionada.
+[Metodología](metodologia.md) · [Fuentes y límites](fuentes_y_limites.md) · [Autoría](AUTORIA_Y_USO.md) · [Verificación](VERIFICACION.md). Portafolio personal sin afiliación o endoso institucional.
