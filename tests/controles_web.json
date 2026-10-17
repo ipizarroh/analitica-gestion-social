@@ -1,0 +1,218 @@
+[
+  {
+    "caso": "F",
+    "periodo": "2026-04-30",
+    "categoria": "",
+    "esperado": {
+      "inscripciones": 105,
+      "personas": 73,
+      "inscripciones_curso_cerrado": 27,
+      "aprobadas_curso_cerrado": 7,
+      "aprobacion_curso_cerrado": 0.25925925925925924,
+      "personas_con_crm_demo": 57,
+      "cobertura_crm_demo": 0.7808219178082192
+    }
+  },
+  {
+    "caso": "F",
+    "periodo": "2026-04-30",
+    "categoria": "CURSO_SIM_1",
+    "esperado": {
+      "inscripciones": 27,
+      "personas": 27,
+      "inscripciones_curso_cerrado": 27,
+      "aprobadas_curso_cerrado": 7,
+      "aprobacion_curso_cerrado": 0.25925925925925924,
+      "personas_con_crm_demo": 21,
+      "cobertura_crm_demo": 0.7777777777777778
+    }
+  },
+  {
+    "caso": "F",
+    "periodo": "2026-04-30",
+    "categoria": "CURSO_SIM_4",
+    "esperado": {
+      "inscripciones": 27,
+      "personas": 27,
+      "inscripciones_curso_cerrado": 0,
+      "aprobadas_curso_cerrado": 0,
+      "aprobacion_curso_cerrado": null,
+      "personas_con_crm_demo": 22,
+      "cobertura_crm_demo": 0.8148148148148148
+    }
+  },
+  {
+    "caso": "F",
+    "periodo": "2026-05-31",
+    "categoria": "",
+    "esperado": {
+      "inscripciones": 120,
+      "personas": 80,
+      "inscripciones_curso_cerrado": 60,
+      "aprobadas_curso_cerrado": 28,
+      "aprobacion_curso_cerrado": 0.4666666666666667,
+      "personas_con_crm_demo": 64,
+      "cobertura_crm_demo": 0.8
+    }
+  },
+  {
+    "caso": "F",
+    "periodo": "2026-05-31",
+    "categoria": "CURSO_SIM_1",
+    "esperado": {
+      "inscripciones": 30,
+      "personas": 30,
+      "inscripciones_curso_cerrado": 30,
+      "aprobadas_curso_cerrado": 15,
+      "aprobacion_curso_cerrado": 0.5,
+      "personas_con_crm_demo": 24,
+      "cobertura_crm_demo": 0.8
+    }
+  },
+  {
+    "caso": "F",
+    "periodo": "2026-05-31",
+    "categoria": "CURSO_SIM_4",
+    "esperado": {
+      "inscripciones": 30,
+      "personas": 30,
+      "inscripciones_curso_cerrado": 0,
+      "aprobadas_curso_cerrado": 0,
+      "aprobacion_curso_cerrado": null,
+      "personas_con_crm_demo": 24,
+      "cobertura_crm_demo": 0.8
+    }
+  },
+  {
+    "caso": "F",
+    "periodo": "2026-06-30",
+    "categoria": "",
+    "esperado": {
+      "inscripciones": 120,
+      "personas": 80,
+      "inscripciones_curso_cerrado": 90,
+      "aprobadas_curso_cerrado": 60,
+      "aprobacion_curso_cerrado": 0.6666666666666666,
+      "personas_con_crm_demo": 64,
+      "cobertura_crm_demo": 0.8
+    }
+  },
+  {
+    "caso": "F",
+    "periodo": "2026-06-30",
+    "categoria": "CURSO_SIM_1",
+    "esperado": {
+      "inscripciones": 30,
+      "personas": 30,
+      "inscripciones_curso_cerrado": 30,
+      "aprobadas_curso_cerrado": 21,
+      "aprobacion_curso_cerrado": 0.7,
+      "personas_con_crm_demo": 24,
+      "cobertura_crm_demo": 0.8
+    }
+  },
+  {
+    "caso": "F",
+    "periodo": "2026-06-30",
+    "categoria": "CURSO_SIM_4",
+    "esperado": {
+      "inscripciones": 30,
+      "personas": 30,
+      "inscripciones_curso_cerrado": 0,
+      "aprobadas_curso_cerrado": 0,
+      "aprobacion_curso_cerrado": null,
+      "personas_con_crm_demo": 24,
+      "cobertura_crm_demo": 0.8
+    }
+  },
+  {
+    "caso": "E",
+    "periodo": "",
+    "categoria": "",
+    "esperado": {
+      "jornadas_esperadas": 336,
+      "registros_recibidos": 314,
+      "presentes": 265,
+      "ausentes": 49,
+      "sin_registro": 22,
+      "cobertura": 0.9345238095238095,
+      "asistencia_observada": 0.8439490445859873,
+      "asistencia_sobre_esperadas": 0.7886904761904762
+    }
+  },
+  {
+    "caso": "E",
+    "periodo": "",
+    "categoria": "PROGRAMA_SIM_1",
+    "esperado": {
+      "jornadas_esperadas": 84,
+      "registros_recibidos": 81,
+      "presentes": 69,
+      "ausentes": 12,
+      "sin_registro": 3,
+      "cobertura": 0.9642857142857143,
+      "asistencia_observada": 0.8518518518518519,
+      "asistencia_sobre_esperadas": 0.8214285714285714
+    }
+  },
+  {
+    "caso": "E",
+    "periodo": "2026-06-01",
+    "categoria": "",
+    "esperado": {
+      "jornadas_esperadas": 24,
+      "registros_recibidos": 24,
+      "presentes": 22,
+      "ausentes": 2,
+      "sin_registro": 0,
+      "cobertura": 1.0,
+      "asistencia_observada": 0.9166666666666666,
+      "asistencia_sobre_esperadas": 0.9166666666666666
+    }
+  },
+  {
+    "caso": "E",
+    "periodo": "2026-06-01",
+    "categoria": "PROGRAMA_SIM_1",
+    "esperado": {
+      "jornadas_esperadas": 6,
+      "registros_recibidos": 6,
+      "presentes": 5,
+      "ausentes": 1,
+      "sin_registro": 0,
+      "cobertura": 1.0,
+      "asistencia_observada": 0.8333333333333334,
+      "asistencia_sobre_esperadas": 0.8333333333333334
+    }
+  },
+  {
+    "caso": "E",
+    "periodo": "2026-06-10",
+    "categoria": "",
+    "esperado": {
+      "jornadas_esperadas": 0,
+      "registros_recibidos": 0,
+      "presentes": 0,
+      "ausentes": 0,
+      "sin_registro": 0,
+      "cobertura": null,
+      "asistencia_observada": null,
+      "asistencia_sobre_esperadas": null
+    }
+  },
+  {
+    "caso": "E",
+    "periodo": "2026-06-10",
+    "categoria": "PROGRAMA_SIM_1",
+    "esperado": {
+      "jornadas_esperadas": 0,
+      "registros_recibidos": 0,
+      "presentes": 0,
+      "ausentes": 0,
+      "sin_registro": 0,
+      "cobertura": null,
+      "asistencia_observada": null,
+      "asistencia_sobre_esperadas": null
+    }
+  }
+]

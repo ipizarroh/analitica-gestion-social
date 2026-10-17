@@ -1,0 +1,8 @@
+// FactJornada contiene universo esperado, incluso Sin registro. Desktop pendiente.
+Jornadas esperadas = COUNTROWS(FactJornada)
+Jornadas recibidas = CALCULATE(COUNTROWS(FactJornada), KEEPFILTERS(FactJornada[estado] <> "Sin registro"))
+Presentes = CALCULATE(COUNTROWS(FactJornada), KEEPFILTERS(FactJornada[estado] = "Presente"))
+Sin registro = CALCULATE(COUNTROWS(FactJornada), KEEPFILTERS(FactJornada[estado] = "Sin registro"))
+Cobertura = DIVIDE([Jornadas recibidas], [Jornadas esperadas])
+Asistencia observada = DIVIDE([Presentes], [Jornadas recibidas])
+Asistencia sobre esperadas = DIVIDE([Presentes], [Jornadas esperadas])
