@@ -1,0 +1,74 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "name": "matriz",
+  "position": {
+    "x": 12,
+    "y": 570,
+    "width": 800,
+    "height": 315,
+    "z": 0,
+    "tabOrder": 13
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimPersona"
+                    }
+                  },
+                  "Property": "PersonaID"
+                }
+              },
+              "queryRef": "DimPersona.PersonaID",
+              "nativeQueryRef": "PersonaID"
+            }
+          ]
+        },
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimCurso"
+                    }
+                  },
+                  "Property": "Curso"
+                }
+              },
+              "queryRef": "DimCurso.Curso",
+              "nativeQueryRef": "Curso"
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactInscripcion"
+                    }
+                  },
+                  "Property": "Estado visible"
+                }
+              },
+              "queryRef": "FactInscripcion.Estado visible",
+              "nativeQueryRef": "Estado visible"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

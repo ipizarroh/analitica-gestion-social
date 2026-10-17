@@ -1,0 +1,478 @@
+{
+  "name": "FormacionSintetica2026",
+  "compatibilityLevel": 1600,
+  "model": {
+    "culture": "es-CL",
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "es-CL",
+    "tables": [
+      {
+        "name": "DimPersona",
+        "columns": [
+          {
+            "name": "PersonaID",
+            "dataType": "string",
+            "sourceColumn": "PersonaID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TipoVinculo",
+            "dataType": "string",
+            "sourceColumn": "TipoVinculo",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Programa",
+            "dataType": "string",
+            "sourceColumn": "Programa",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Zona",
+            "dataType": "string",
+            "sourceColumn": "Zona",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Territorio",
+            "dataType": "string",
+            "sourceColumn": "Territorio",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EnCRM",
+            "dataType": "int64",
+            "sourceColumn": "EnCRM",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ConCurso",
+            "dataType": "int64",
+            "sourceColumn": "ConCurso",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AsignacionResuelta",
+            "dataType": "int64",
+            "sourceColumn": "AsignacionResuelta",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimPersona",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "#table(type table [\"PersonaID\" = type text, \"TipoVinculo\" = type text, \"Programa\" = type text, \"Zona\" = type text, \"Territorio\" = type text, \"EnCRM\" = Int64.Type, \"ConCurso\" = Int64.Type, \"AsignacionResuelta\" = Int64.Type], {",
+                "    {\"PERSONA_SIM_001\", \"Práctica\", \"Sin resolver\", \"Sin resolver\", \"Sin resolver\", 1, 1, 0},",
+                "    {\"PERSONA_SIM_002\", \"Voluntariado\", \"Programa ficticio 3\", \"Zona ficticia 1\", \"Territorio ficticio 3\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_003\", \"Práctica\", \"Programa ficticio 4\", \"Zona ficticia 2\", \"Territorio ficticio 4\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_004\", \"Voluntariado\", \"Programa ficticio 1\", \"Zona ficticia 1\", \"Territorio ficticio 1\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_005\", \"Práctica\", \"Sin CRM\", \"Sin CRM\", \"Sin CRM\", 0, 1, 0},",
+                "    {\"PERSONA_SIM_006\", \"Voluntariado\", \"Programa ficticio 3\", \"Zona ficticia 1\", \"Territorio ficticio 3\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_007\", \"Práctica\", \"Programa ficticio 4\", \"Zona ficticia 2\", \"Territorio ficticio 4\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_008\", \"Voluntariado\", \"Programa ficticio 1\", \"Zona ficticia 1\", \"Territorio ficticio 1\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_009\", \"Práctica\", \"Programa ficticio 2\", \"Zona ficticia 2\", \"Territorio ficticio 2\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_010\", \"Voluntariado\", \"Sin CRM\", \"Sin CRM\", \"Sin CRM\", 0, 1, 0},",
+                "    {\"PERSONA_SIM_011\", \"Práctica\", \"Programa ficticio 4\", \"Zona ficticia 2\", \"Territorio ficticio 4\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_012\", \"Voluntariado\", \"Programa ficticio 1\", \"Zona ficticia 1\", \"Territorio ficticio 1\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_013\", \"Práctica\", \"Programa ficticio 2\", \"Zona ficticia 2\", \"Territorio ficticio 2\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_014\", \"Voluntariado\", \"Programa ficticio 3\", \"Zona ficticia 1\", \"Territorio ficticio 3\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_015\", \"Práctica\", \"Sin CRM\", \"Sin CRM\", \"Sin CRM\", 0, 1, 0},",
+                "    {\"PERSONA_SIM_016\", \"Voluntariado\", \"Programa ficticio 1\", \"Zona ficticia 1\", \"Territorio ficticio 1\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_017\", \"Práctica\", \"Programa ficticio 2\", \"Zona ficticia 2\", \"Territorio ficticio 2\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_018\", \"Voluntariado\", \"Programa ficticio 3\", \"Zona ficticia 1\", \"Territorio ficticio 3\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_019\", \"Práctica\", \"Programa ficticio 4\", \"Zona ficticia 2\", \"Territorio ficticio 4\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_020\", \"Voluntariado\", \"Sin CRM\", \"Sin CRM\", \"Sin CRM\", 0, 1, 0},",
+                "    {\"PERSONA_SIM_021\", \"Práctica\", \"Programa ficticio 2\", \"Zona ficticia 2\", \"Territorio ficticio 2\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_022\", \"Voluntariado\", \"Programa ficticio 3\", \"Zona ficticia 1\", \"Territorio ficticio 3\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_023\", \"Práctica\", \"Programa ficticio 4\", \"Zona ficticia 2\", \"Territorio ficticio 4\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_024\", \"Voluntariado\", \"Programa ficticio 1\", \"Zona ficticia 1\", \"Territorio ficticio 1\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_025\", \"Práctica\", \"Sin CRM\", \"Sin CRM\", \"Sin CRM\", 0, 1, 0},",
+                "    {\"PERSONA_SIM_026\", \"Voluntariado\", \"Programa ficticio 3\", \"Zona ficticia 1\", \"Territorio ficticio 3\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_027\", \"Práctica\", \"Programa ficticio 4\", \"Zona ficticia 2\", \"Territorio ficticio 4\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_028\", \"Voluntariado\", \"Programa ficticio 1\", \"Zona ficticia 1\", \"Territorio ficticio 1\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_029\", \"Práctica\", \"Programa ficticio 2\", \"Zona ficticia 2\", \"Territorio ficticio 2\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_030\", \"Voluntariado\", \"Sin CRM\", \"Sin CRM\", \"Sin CRM\", 0, 1, 0},",
+                "    {\"PERSONA_SIM_031\", \"Práctica\", \"Programa ficticio 4\", \"Zona ficticia 2\", \"Territorio ficticio 4\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_032\", \"Voluntariado\", \"Programa ficticio 1\", \"Zona ficticia 1\", \"Territorio ficticio 1\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_033\", \"Práctica\", \"Programa ficticio 2\", \"Zona ficticia 2\", \"Territorio ficticio 2\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_034\", \"Voluntariado\", \"Programa ficticio 3\", \"Zona ficticia 1\", \"Territorio ficticio 3\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_035\", \"Práctica\", \"Sin CRM\", \"Sin CRM\", \"Sin CRM\", 0, 1, 0},",
+                "    {\"PERSONA_SIM_036\", \"Voluntariado\", \"Programa ficticio 1\", \"Zona ficticia 1\", \"Territorio ficticio 1\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_037\", \"Práctica\", \"Programa ficticio 2\", \"Zona ficticia 2\", \"Territorio ficticio 2\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_038\", \"Voluntariado\", \"Programa ficticio 3\", \"Zona ficticia 1\", \"Territorio ficticio 3\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_039\", \"Práctica\", \"Programa ficticio 4\", \"Zona ficticia 2\", \"Territorio ficticio 4\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_040\", \"Voluntariado\", \"Sin CRM\", \"Sin CRM\", \"Sin CRM\", 0, 1, 0},",
+                "    {\"PERSONA_SIM_041\", \"Práctica\", \"Programa ficticio 2\", \"Zona ficticia 2\", \"Territorio ficticio 2\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_042\", \"Voluntariado\", \"Programa ficticio 3\", \"Zona ficticia 1\", \"Territorio ficticio 3\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_043\", \"Práctica\", \"Programa ficticio 4\", \"Zona ficticia 2\", \"Territorio ficticio 4\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_044\", \"Voluntariado\", \"Programa ficticio 1\", \"Zona ficticia 1\", \"Territorio ficticio 1\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_045\", \"Práctica\", \"Sin CRM\", \"Sin CRM\", \"Sin CRM\", 0, 1, 0},",
+                "    {\"PERSONA_SIM_046\", \"Voluntariado\", \"Programa ficticio 3\", \"Zona ficticia 1\", \"Territorio ficticio 3\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_047\", \"Práctica\", \"Programa ficticio 4\", \"Zona ficticia 2\", \"Territorio ficticio 4\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_048\", \"Voluntariado\", \"Programa ficticio 1\", \"Zona ficticia 1\", \"Territorio ficticio 1\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_049\", \"Práctica\", \"Programa ficticio 2\", \"Zona ficticia 2\", \"Territorio ficticio 2\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_050\", \"Voluntariado\", \"Sin CRM\", \"Sin CRM\", \"Sin CRM\", 0, 1, 0},",
+                "    {\"PERSONA_SIM_051\", \"Práctica\", \"Programa ficticio 4\", \"Zona ficticia 2\", \"Territorio ficticio 4\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_052\", \"Voluntariado\", \"Programa ficticio 1\", \"Zona ficticia 1\", \"Territorio ficticio 1\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_053\", \"Práctica\", \"Programa ficticio 2\", \"Zona ficticia 2\", \"Territorio ficticio 2\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_054\", \"Voluntariado\", \"Programa ficticio 3\", \"Zona ficticia 1\", \"Territorio ficticio 3\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_055\", \"Práctica\", \"Sin CRM\", \"Sin CRM\", \"Sin CRM\", 0, 1, 0},",
+                "    {\"PERSONA_SIM_056\", \"Voluntariado\", \"Programa ficticio 1\", \"Zona ficticia 1\", \"Territorio ficticio 1\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_057\", \"Práctica\", \"Programa ficticio 2\", \"Zona ficticia 2\", \"Territorio ficticio 2\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_058\", \"Voluntariado\", \"Programa ficticio 3\", \"Zona ficticia 1\", \"Territorio ficticio 3\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_059\", \"Práctica\", \"Programa ficticio 4\", \"Zona ficticia 2\", \"Territorio ficticio 4\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_060\", \"Voluntariado\", \"Sin CRM\", \"Sin CRM\", \"Sin CRM\", 0, 1, 0},",
+                "    {\"PERSONA_SIM_061\", \"Práctica\", \"Programa ficticio 2\", \"Zona ficticia 2\", \"Territorio ficticio 2\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_062\", \"Voluntariado\", \"Programa ficticio 3\", \"Zona ficticia 1\", \"Territorio ficticio 3\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_063\", \"Práctica\", \"Programa ficticio 4\", \"Zona ficticia 2\", \"Territorio ficticio 4\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_064\", \"Voluntariado\", \"Programa ficticio 1\", \"Zona ficticia 1\", \"Territorio ficticio 1\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_065\", \"Práctica\", \"Sin CRM\", \"Sin CRM\", \"Sin CRM\", 0, 1, 0},",
+                "    {\"PERSONA_SIM_066\", \"Voluntariado\", \"Programa ficticio 3\", \"Zona ficticia 1\", \"Territorio ficticio 3\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_067\", \"Práctica\", \"Programa ficticio 4\", \"Zona ficticia 2\", \"Territorio ficticio 4\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_068\", \"Voluntariado\", \"Programa ficticio 1\", \"Zona ficticia 1\", \"Territorio ficticio 1\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_069\", \"Práctica\", \"Programa ficticio 2\", \"Zona ficticia 2\", \"Territorio ficticio 2\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_070\", \"Voluntariado\", \"Sin CRM\", \"Sin CRM\", \"Sin CRM\", 0, 1, 0},",
+                "    {\"PERSONA_SIM_071\", \"Práctica\", \"Programa ficticio 4\", \"Zona ficticia 2\", \"Territorio ficticio 4\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_072\", \"Voluntariado\", \"Programa ficticio 1\", \"Zona ficticia 1\", \"Territorio ficticio 1\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_073\", \"Práctica\", \"Programa ficticio 2\", \"Zona ficticia 2\", \"Territorio ficticio 2\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_074\", \"Voluntariado\", \"Programa ficticio 3\", \"Zona ficticia 1\", \"Territorio ficticio 3\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_075\", \"Práctica\", \"Sin CRM\", \"Sin CRM\", \"Sin CRM\", 0, 1, 0},",
+                "    {\"PERSONA_SIM_076\", \"Voluntariado\", \"Programa ficticio 1\", \"Zona ficticia 1\", \"Territorio ficticio 1\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_077\", \"Práctica\", \"Programa ficticio 2\", \"Zona ficticia 2\", \"Territorio ficticio 2\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_078\", \"Voluntariado\", \"Programa ficticio 3\", \"Zona ficticia 1\", \"Territorio ficticio 3\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_079\", \"Práctica\", \"Programa ficticio 4\", \"Zona ficticia 2\", \"Territorio ficticio 4\", 1, 1, 1},",
+                "    {\"PERSONA_SIM_080\", \"Voluntariado\", \"Sin CRM\", \"Sin CRM\", \"Sin CRM\", 0, 1, 0},",
+                "    {\"PERSONA_SIM_081\", \"Práctica\", \"Programa ficticio 2\", \"Zona ficticia 2\", \"Territorio ficticio 2\", 1, 0, 1},",
+                "    {\"PERSONA_SIM_082\", \"Voluntariado\", \"Programa ficticio 3\", \"Zona ficticia 1\", \"Territorio ficticio 3\", 1, 0, 1},",
+                "    {\"PERSONA_SIM_083\", \"Práctica\", \"Programa ficticio 4\", \"Zona ficticia 2\", \"Territorio ficticio 4\", 1, 0, 1},",
+                "    {\"PERSONA_SIM_084\", \"Voluntariado\", \"Programa ficticio 1\", \"Zona ficticia 1\", \"Territorio ficticio 1\", 1, 0, 1},",
+                "    {\"PERSONA_SIM_085\", \"Práctica\", \"Sin CRM\", \"Sin CRM\", \"Sin CRM\", 0, 0, 0},",
+                "    {\"PERSONA_SIM_086\", \"Voluntariado\", \"Programa ficticio 3\", \"Zona ficticia 1\", \"Territorio ficticio 3\", 1, 0, 1},",
+                "    {\"PERSONA_SIM_087\", \"Práctica\", \"Programa ficticio 4\", \"Zona ficticia 2\", \"Territorio ficticio 4\", 1, 0, 1},",
+                "    {\"PERSONA_SIM_088\", \"Voluntariado\", \"Programa ficticio 1\", \"Zona ficticia 1\", \"Territorio ficticio 1\", 1, 0, 1},",
+                "    {\"PERSONA_SIM_089\", \"Práctica\", \"Programa ficticio 2\", \"Zona ficticia 2\", \"Territorio ficticio 2\", 1, 0, 1},",
+                "    {\"PERSONA_SIM_090\", \"Voluntariado\", \"Sin CRM\", \"Sin CRM\", \"Sin CRM\", 0, 0, 0},",
+                "    {\"PERSONA_SIM_091\", \"Práctica\", \"Programa ficticio 4\", \"Zona ficticia 2\", \"Territorio ficticio 4\", 1, 0, 1},",
+                "    {\"PERSONA_SIM_092\", \"Voluntariado\", \"Programa ficticio 1\", \"Zona ficticia 1\", \"Territorio ficticio 1\", 1, 0, 1},",
+                "    {\"PERSONA_SIM_093\", \"Práctica\", \"Programa ficticio 2\", \"Zona ficticia 2\", \"Territorio ficticio 2\", 1, 0, 1},",
+                "    {\"PERSONA_SIM_094\", \"Voluntariado\", \"Programa ficticio 3\", \"Zona ficticia 1\", \"Territorio ficticio 3\", 1, 0, 1},",
+                "    {\"PERSONA_SIM_095\", \"Práctica\", \"Sin CRM\", \"Sin CRM\", \"Sin CRM\", 0, 0, 0},",
+                "    {\"PERSONA_SIM_096\", \"Voluntariado\", \"Programa ficticio 1\", \"Zona ficticia 1\", \"Territorio ficticio 1\", 1, 0, 1}",
+                "})"
+              ]
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Personas registradas",
+            "expression": "COALESCE(COUNTROWS(DimPersona), 0)",
+            "description": "Personas del universo registrado, incluso sin inscripción.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Con CRM",
+            "expression": "CALCULATE([Personas registradas], KEEPFILTERS(DimPersona[EnCRM] = 1))",
+            "description": "Bandera al corte; no se utiliza información futura.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Sin CRM",
+            "expression": "CALCULATE([Personas registradas], KEEPFILTERS(DimPersona[EnCRM] = 0))",
+            "description": "No registrado en la fuente sintética CRM.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Con cursos",
+            "expression": "CALCULATE([Personas registradas], KEEPFILTERS(DimPersona[ConCurso] = 1))",
+            "description": "Personas, no inscripciones.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Sin cursos",
+            "expression": "CALCULATE([Personas registradas], KEEPFILTERS(DimPersona[ConCurso] = 0))",
+            "description": "Incluye registradas sin inscripción.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Inscripciones",
+            "expression": "COALESCE(COUNTROWS(FactInscripcion), 0)",
+            "description": "Grano inscripción única en un corte fijo.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Aprobadas",
+            "expression": "CALCULATE([Inscripciones], KEEPFILTERS(FactInscripcion[Estado] = \"Aprobado\"))",
+            "description": "Cuenta inscripciones aprobadas; incluye cursos aún abiertos.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "En curso",
+            "expression": "CALCULATE([Inscripciones], KEEPFILTERS(FactInscripcion[Estado] = \"En curso\"))",
+            "description": "Inscripciones en curso al corte.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Sin avance",
+            "expression": "CALCULATE([Inscripciones], KEEPFILTERS(FactInscripcion[Estado] = \"Sin avance\"))",
+            "description": "Inscripciones sin avance al corte.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Cobertura CRM",
+            "expression": "DIVIDE([Con CRM], [Personas registradas])",
+            "description": "Mismo universo registrado bajo los filtros.",
+            "formatString": "0.0%"
+          }
+        ]
+      },
+      {
+        "name": "DimCurso",
+        "columns": [
+          {
+            "name": "CursoID",
+            "dataType": "string",
+            "sourceColumn": "CursoID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Curso",
+            "dataType": "string",
+            "sourceColumn": "Curso",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Fin",
+            "dataType": "string",
+            "sourceColumn": "Fin",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimCurso",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "#table(type table [\"CursoID\" = type text, \"Curso\" = type text, \"Fin\" = type text], {",
+                "    {\"CURSO_SIM_1\", \"Curso ficticio 1\", \"2026-04-20\"},",
+                "    {\"CURSO_SIM_2\", \"Curso ficticio 2\", \"2026-05-20\"},",
+                "    {\"CURSO_SIM_3\", \"Curso ficticio 3\", \"2026-06-20\"},",
+                "    {\"CURSO_SIM_4\", \"Curso ficticio 4\", \"2026-07-20\"}",
+                "})"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "FactInscripcion",
+        "columns": [
+          {
+            "name": "InscripcionID",
+            "dataType": "string",
+            "sourceColumn": "InscripcionID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PersonaID",
+            "dataType": "string",
+            "sourceColumn": "PersonaID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CursoID",
+            "dataType": "string",
+            "sourceColumn": "CursoID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Estado",
+            "dataType": "string",
+            "sourceColumn": "Estado",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Cerrado",
+            "dataType": "int64",
+            "sourceColumn": "Cerrado",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactInscripcion",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "#table(type table [\"InscripcionID\" = type text, \"PersonaID\" = type text, \"CursoID\" = type text, \"Estado\" = type text, \"Cerrado\" = Int64.Type], {",
+                "    {\"INS_SIM_001\", \"PERSONA_SIM_001\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_002\", \"PERSONA_SIM_002\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_003\", \"PERSONA_SIM_003\", \"CURSO_SIM_1\", \"Sin avance\", 1},",
+                "    {\"INS_SIM_004\", \"PERSONA_SIM_004\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_005\", \"PERSONA_SIM_005\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_006\", \"PERSONA_SIM_006\", \"CURSO_SIM_1\", \"En curso\", 1},",
+                "    {\"INS_SIM_007\", \"PERSONA_SIM_007\", \"CURSO_SIM_1\", \"En curso\", 1},",
+                "    {\"INS_SIM_008\", \"PERSONA_SIM_008\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_009\", \"PERSONA_SIM_009\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_010\", \"PERSONA_SIM_010\", \"CURSO_SIM_1\", \"En curso\", 1},",
+                "    {\"INS_SIM_011\", \"PERSONA_SIM_011\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_012\", \"PERSONA_SIM_012\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_013\", \"PERSONA_SIM_013\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_014\", \"PERSONA_SIM_014\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_015\", \"PERSONA_SIM_015\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_016\", \"PERSONA_SIM_016\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_017\", \"PERSONA_SIM_017\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_018\", \"PERSONA_SIM_018\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_019\", \"PERSONA_SIM_019\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_020\", \"PERSONA_SIM_020\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_021\", \"PERSONA_SIM_021\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_022\", \"PERSONA_SIM_022\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_023\", \"PERSONA_SIM_023\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_024\", \"PERSONA_SIM_024\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_025\", \"PERSONA_SIM_025\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_026\", \"PERSONA_SIM_026\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_027\", \"PERSONA_SIM_027\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_028\", \"PERSONA_SIM_028\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_029\", \"PERSONA_SIM_029\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_030\", \"PERSONA_SIM_030\", \"CURSO_SIM_1\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_031\", \"PERSONA_SIM_031\", \"CURSO_SIM_2\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_032\", \"PERSONA_SIM_032\", \"CURSO_SIM_2\", \"En curso\", 1},",
+                "    {\"INS_SIM_033\", \"PERSONA_SIM_033\", \"CURSO_SIM_2\", \"En curso\", 1},",
+                "    {\"INS_SIM_034\", \"PERSONA_SIM_034\", \"CURSO_SIM_2\", \"En curso\", 1},",
+                "    {\"INS_SIM_035\", \"PERSONA_SIM_035\", \"CURSO_SIM_2\", \"Sin avance\", 1},",
+                "    {\"INS_SIM_036\", \"PERSONA_SIM_036\", \"CURSO_SIM_2\", \"En curso\", 1},",
+                "    {\"INS_SIM_037\", \"PERSONA_SIM_037\", \"CURSO_SIM_2\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_038\", \"PERSONA_SIM_038\", \"CURSO_SIM_2\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_039\", \"PERSONA_SIM_039\", \"CURSO_SIM_2\", \"En curso\", 1},",
+                "    {\"INS_SIM_040\", \"PERSONA_SIM_040\", \"CURSO_SIM_2\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_041\", \"PERSONA_SIM_041\", \"CURSO_SIM_2\", \"Sin avance\", 1},",
+                "    {\"INS_SIM_042\", \"PERSONA_SIM_042\", \"CURSO_SIM_2\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_043\", \"PERSONA_SIM_043\", \"CURSO_SIM_2\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_044\", \"PERSONA_SIM_044\", \"CURSO_SIM_2\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_045\", \"PERSONA_SIM_045\", \"CURSO_SIM_2\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_046\", \"PERSONA_SIM_046\", \"CURSO_SIM_2\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_047\", \"PERSONA_SIM_047\", \"CURSO_SIM_2\", \"Sin avance\", 1},",
+                "    {\"INS_SIM_048\", \"PERSONA_SIM_048\", \"CURSO_SIM_2\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_049\", \"PERSONA_SIM_049\", \"CURSO_SIM_2\", \"En curso\", 1},",
+                "    {\"INS_SIM_050\", \"PERSONA_SIM_050\", \"CURSO_SIM_2\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_051\", \"PERSONA_SIM_051\", \"CURSO_SIM_2\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_052\", \"PERSONA_SIM_052\", \"CURSO_SIM_2\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_053\", \"PERSONA_SIM_053\", \"CURSO_SIM_2\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_054\", \"PERSONA_SIM_054\", \"CURSO_SIM_2\", \"Sin avance\", 1},",
+                "    {\"INS_SIM_055\", \"PERSONA_SIM_055\", \"CURSO_SIM_2\", \"Sin avance\", 1},",
+                "    {\"INS_SIM_056\", \"PERSONA_SIM_056\", \"CURSO_SIM_2\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_057\", \"PERSONA_SIM_057\", \"CURSO_SIM_2\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_058\", \"PERSONA_SIM_058\", \"CURSO_SIM_2\", \"En curso\", 1},",
+                "    {\"INS_SIM_059\", \"PERSONA_SIM_059\", \"CURSO_SIM_2\", \"En curso\", 1},",
+                "    {\"INS_SIM_060\", \"PERSONA_SIM_060\", \"CURSO_SIM_2\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_061\", \"PERSONA_SIM_061\", \"CURSO_SIM_3\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_062\", \"PERSONA_SIM_062\", \"CURSO_SIM_3\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_063\", \"PERSONA_SIM_063\", \"CURSO_SIM_3\", \"En curso\", 1},",
+                "    {\"INS_SIM_064\", \"PERSONA_SIM_064\", \"CURSO_SIM_3\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_065\", \"PERSONA_SIM_065\", \"CURSO_SIM_3\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_066\", \"PERSONA_SIM_066\", \"CURSO_SIM_3\", \"Sin avance\", 1},",
+                "    {\"INS_SIM_067\", \"PERSONA_SIM_067\", \"CURSO_SIM_3\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_068\", \"PERSONA_SIM_068\", \"CURSO_SIM_3\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_069\", \"PERSONA_SIM_069\", \"CURSO_SIM_3\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_070\", \"PERSONA_SIM_070\", \"CURSO_SIM_3\", \"Sin avance\", 1},",
+                "    {\"INS_SIM_071\", \"PERSONA_SIM_071\", \"CURSO_SIM_3\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_072\", \"PERSONA_SIM_072\", \"CURSO_SIM_3\", \"Sin avance\", 1},",
+                "    {\"INS_SIM_073\", \"PERSONA_SIM_073\", \"CURSO_SIM_3\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_074\", \"PERSONA_SIM_074\", \"CURSO_SIM_3\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_075\", \"PERSONA_SIM_075\", \"CURSO_SIM_3\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_076\", \"PERSONA_SIM_076\", \"CURSO_SIM_3\", \"Sin avance\", 1},",
+                "    {\"INS_SIM_077\", \"PERSONA_SIM_077\", \"CURSO_SIM_3\", \"En curso\", 1},",
+                "    {\"INS_SIM_078\", \"PERSONA_SIM_078\", \"CURSO_SIM_3\", \"Sin avance\", 1},",
+                "    {\"INS_SIM_079\", \"PERSONA_SIM_079\", \"CURSO_SIM_3\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_080\", \"PERSONA_SIM_080\", \"CURSO_SIM_3\", \"Sin avance\", 1},",
+                "    {\"INS_SIM_081\", \"PERSONA_SIM_001\", \"CURSO_SIM_3\", \"Sin avance\", 1},",
+                "    {\"INS_SIM_082\", \"PERSONA_SIM_002\", \"CURSO_SIM_3\", \"En curso\", 1},",
+                "    {\"INS_SIM_083\", \"PERSONA_SIM_003\", \"CURSO_SIM_3\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_084\", \"PERSONA_SIM_004\", \"CURSO_SIM_3\", \"Sin avance\", 1},",
+                "    {\"INS_SIM_085\", \"PERSONA_SIM_005\", \"CURSO_SIM_3\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_086\", \"PERSONA_SIM_006\", \"CURSO_SIM_3\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_087\", \"PERSONA_SIM_007\", \"CURSO_SIM_3\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_088\", \"PERSONA_SIM_008\", \"CURSO_SIM_3\", \"En curso\", 1},",
+                "    {\"INS_SIM_089\", \"PERSONA_SIM_009\", \"CURSO_SIM_3\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_090\", \"PERSONA_SIM_010\", \"CURSO_SIM_3\", \"Aprobado\", 1},",
+                "    {\"INS_SIM_091\", \"PERSONA_SIM_011\", \"CURSO_SIM_4\", \"Aprobado\", 0},",
+                "    {\"INS_SIM_092\", \"PERSONA_SIM_012\", \"CURSO_SIM_4\", \"En curso\", 0},",
+                "    {\"INS_SIM_093\", \"PERSONA_SIM_013\", \"CURSO_SIM_4\", \"Aprobado\", 0},",
+                "    {\"INS_SIM_094\", \"PERSONA_SIM_014\", \"CURSO_SIM_4\", \"Aprobado\", 0},",
+                "    {\"INS_SIM_095\", \"PERSONA_SIM_015\", \"CURSO_SIM_4\", \"Aprobado\", 0},",
+                "    {\"INS_SIM_096\", \"PERSONA_SIM_016\", \"CURSO_SIM_4\", \"Aprobado\", 0},",
+                "    {\"INS_SIM_097\", \"PERSONA_SIM_017\", \"CURSO_SIM_4\", \"Aprobado\", 0},",
+                "    {\"INS_SIM_098\", \"PERSONA_SIM_018\", \"CURSO_SIM_4\", \"Aprobado\", 0},",
+                "    {\"INS_SIM_099\", \"PERSONA_SIM_019\", \"CURSO_SIM_4\", \"Aprobado\", 0},",
+                "    {\"INS_SIM_100\", \"PERSONA_SIM_020\", \"CURSO_SIM_4\", \"Aprobado\", 0},",
+                "    {\"INS_SIM_101\", \"PERSONA_SIM_021\", \"CURSO_SIM_4\", \"Sin avance\", 0},",
+                "    {\"INS_SIM_102\", \"PERSONA_SIM_022\", \"CURSO_SIM_4\", \"Sin avance\", 0},",
+                "    {\"INS_SIM_103\", \"PERSONA_SIM_023\", \"CURSO_SIM_4\", \"Aprobado\", 0},",
+                "    {\"INS_SIM_104\", \"PERSONA_SIM_024\", \"CURSO_SIM_4\", \"Aprobado\", 0},",
+                "    {\"INS_SIM_105\", \"PERSONA_SIM_025\", \"CURSO_SIM_4\", \"Aprobado\", 0},",
+                "    {\"INS_SIM_106\", \"PERSONA_SIM_026\", \"CURSO_SIM_4\", \"Aprobado\", 0},",
+                "    {\"INS_SIM_107\", \"PERSONA_SIM_027\", \"CURSO_SIM_4\", \"En curso\", 0},",
+                "    {\"INS_SIM_108\", \"PERSONA_SIM_028\", \"CURSO_SIM_4\", \"Aprobado\", 0},",
+                "    {\"INS_SIM_109\", \"PERSONA_SIM_029\", \"CURSO_SIM_4\", \"En curso\", 0},",
+                "    {\"INS_SIM_110\", \"PERSONA_SIM_030\", \"CURSO_SIM_4\", \"En curso\", 0},",
+                "    {\"INS_SIM_111\", \"PERSONA_SIM_031\", \"CURSO_SIM_4\", \"Aprobado\", 0},",
+                "    {\"INS_SIM_112\", \"PERSONA_SIM_032\", \"CURSO_SIM_4\", \"Aprobado\", 0},",
+                "    {\"INS_SIM_113\", \"PERSONA_SIM_033\", \"CURSO_SIM_4\", \"Aprobado\", 0},",
+                "    {\"INS_SIM_114\", \"PERSONA_SIM_034\", \"CURSO_SIM_4\", \"Aprobado\", 0},",
+                "    {\"INS_SIM_115\", \"PERSONA_SIM_035\", \"CURSO_SIM_4\", \"Aprobado\", 0},",
+                "    {\"INS_SIM_116\", \"PERSONA_SIM_036\", \"CURSO_SIM_4\", \"Aprobado\", 0},",
+                "    {\"INS_SIM_117\", \"PERSONA_SIM_037\", \"CURSO_SIM_4\", \"Aprobado\", 0},",
+                "    {\"INS_SIM_118\", \"PERSONA_SIM_038\", \"CURSO_SIM_4\", \"Sin avance\", 0},",
+                "    {\"INS_SIM_119\", \"PERSONA_SIM_039\", \"CURSO_SIM_4\", \"En curso\", 0},",
+                "    {\"INS_SIM_120\", \"PERSONA_SIM_040\", \"CURSO_SIM_4\", \"Aprobado\", 0}",
+                "})"
+              ]
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Estado visible",
+            "expression": "SELECTEDVALUE(FactInscripcion[Estado])",
+            "description": "Texto solo cuando hay un estado único; no inscripción queda BLANK."
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "Persona_Inscripcion",
+        "fromTable": "FactInscripcion",
+        "fromColumn": "PersonaID",
+        "fromCardinality": "many",
+        "toTable": "DimPersona",
+        "toColumn": "PersonaID",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "Curso_Inscripcion",
+        "fromTable": "FactInscripcion",
+        "fromColumn": "CursoID",
+        "fromCardinality": "many",
+        "toTable": "DimCurso",
+        "toColumn": "CursoID",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      }
+    ]
+  }
+}

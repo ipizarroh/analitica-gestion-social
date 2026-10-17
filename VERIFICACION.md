@@ -1,16 +1,18 @@
-# Verificación de la fase 2
+# Verificación y límites
 
-Las pruebas son reproducibles desde un clon limpio. Consulte los comandos del README. Python/SQL validan reglas y agregados de los datos artificiales; JavaScript contrasta los cálculos del visor con expectativas Python. El workflow de GitHub ejecuta esas mismas pruebas en cada cambio. Los resultados remotos y capturas se documentan tras la publicación.
+Las pruebas se reproducen desde un clon limpio con los comandos del README. Python/SQL validan reglas y agregados artificiales; JavaScript contrasta cálculos del visor contra Python. El workflow ejecuta contratos, paridad y regeneración.
 
-Power Query, DAX y los candidatos PBIP requieren validación en Power BI Desktop. No se ejecutaron Desktop, Performance Analyzer ni DAX Studio en Linux. Ningún test JSON/PBIR ni la vista web sustituye apertura, refresh, filtros, guardado y reapertura nativos. No se presenta mejora de rendimiento medida.
+## Fase 3
 
-La auditoría privada compara términos e identificadores de fuentes, revisa archivos y contenido XLSX, bloquea rutas personales, secretos y originales y revisa los blobs del historial Git. Es un control técnico y revisión de contenido, no una certificación legal. La fuente histórica privada no se publica.
+- 25 pruebas Python aprobadas, incluidas diez nuevas de universo, duplicados, conflictos, temporalidad, orden, huérfanos y SQL independiente.
+- Paridad de la nueva vista: siete contextos / 56 resultados. Se conservan los 15 contextos / 111 valores de las demos previas.
+- Candidato PBIR: 21 archivos JSON validados contra esquemas públicos de Microsoft, con referencias y datos sintéticos revisados. Modelo TMSL y expresiones se revisan estáticamente.
+- Regeneración determinista de datos, HTML y candidato nativo.
 
-## Evidencia ejecutada
+Power BI Desktop, Excel nativo, DAX Studio, Performance Analyzer y ejecución DAX/M **no se realizaron** en Linux. La validación JSON y la vista web no sustituyen apertura, refresh, interacción, guardado y reapertura nativos. No se atribuye mejora de rendimiento al motor.
 
-- 15 tests Python aprobados; Excel completo incluido en GHTOP y SQL independiente en ambos.
-- Paridad web: 15 contextos / 111 valores.
-- [GitHub Actions](https://github.com/ipizarroh/analitica-gestion-social/actions/runs/38985079041): ejecución remota de contratos, calidad, paridad y regeneración HTML.
-- Visor HTTPS revisado en navegador: Formación junio, abril/curso inmaduro, Educación total, día cerrado y restablecer filtros. Capturas en `imagenes/` y expectativas en `tests/controles_web.json`.
+La extracción privada de modelos se realizó localmente con PBIXRay 0.15.5, de solo lectura. No se ejecutaron las consultas ni el R histórico. Hubo errores del extractor en algunos modelos Power Pivot: el detalle privado conserva cada resultado; no se confunden con fallas del libro en Excel.
 
-Los archivos DAX/M se revisan como fuentes preparados. La ausencia de ejecución nativa sigue siendo una limitación material: no afirmar que estos tests los compilan o validan sus contextos en el motor Power BI.
+La revisión de publicación compara identificadores/rutas de fuentes, inspecciona contenido y bloquea originales, contactos y secretos. Es un control técnico y editorial, sin certificar derechos de publicación de los originales, que quedan excluidos. Las capturas publicadas son solo de demostraciones sintéticas posteriores.
+
+Los resultados remotos de esta fase se añaden tras publicar y verificar. Véase [historial de cambios](CHANGELOG.md) y [protocolo Desktop](powerbi/recuperacion_formacion/README.md).

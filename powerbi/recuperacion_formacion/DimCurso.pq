@@ -1,0 +1,7 @@
+// New synthetic table, 2026. No institutional source.
+#table(type table ["CursoID" = type text, "Curso" = type text, "Fin" = type text], {
+    {"CURSO_SIM_1", "Curso ficticio 1", "2026-04-20"},
+    {"CURSO_SIM_2", "Curso ficticio 2", "2026-05-20"},
+    {"CURSO_SIM_3", "Curso ficticio 3", "2026-06-20"},
+    {"CURSO_SIM_4", "Curso ficticio 4", "2026-07-20"}
+})
