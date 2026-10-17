@@ -68,8 +68,14 @@ Resumen con personas, inscripciones y denominador de cursos cerrados, seguida de
 | Seguimiento de estados | Denominador por curso cerrado | Excluye cohortes inmaduras | Sin curso cerrado devuelve ausencia, no 0% |
 | Identificación para evaluación | Bandeja de revisión con autorización | No automatiza bajas | No se ejecuta ninguna desactivación |
 
-Estado: **DISEÑO + IMPLEMENTACIÓN SINTÉTICA PROBADA (Python/SQL; navegador pendiente)**; **VALIDACIÓN DESKTOP PENDIENTE**. La recreación de 2026 no es el dashboard histórico.
+Estado: **DISEÑO + IMPLEMENTACIÓN SINTÉTICA PROBADA (Python/SQL/navegador)**; **VALIDACIÓN DESKTOP PENDIENTE**. La recreación de 2026 no es el dashboard histórico.
 
 ### Estado de esta evolución
 
 El trabajo histórico y la reconstrucción posterior se evalúan por separado. Las propuestas de seguridad y operación no acreditan funciones desplegadas durante mi experiencia laboral. No se publican capturas ni datos institucionales. Los documentos privados permiten contrastar el relato; las pruebas públicas corresponden exclusivamente a código nuevo y datos artificiales.
+
+## Evidencia de ejecución de la recreación
+
+![formacion: visor sintético verificado](../../imagenes/formacion_2026_verificada.jpg)
+
+Recreación técnica posterior (2026), no captura histórica. Captura real del visor web; Power BI Desktop pendiente. [Explorar la demo](https://ipizarroh.github.io/analitica-gestion-social/).

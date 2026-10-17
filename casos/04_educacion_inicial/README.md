@@ -67,8 +67,14 @@ Primero cobertura y pendientes; luego asistencia observada. Evitar semáforos qu
 | Reportería de asistencia | Cobertura separada de asistencia | Más indicadores que explicar | P1: faltante nunca se vuelve ausente |
 | Selección aleatoria de apoyo | Semilla y población versionadas | No sustituye diseño estadístico | P2: selección reproducible, sin reemplazo |
 
-Estado: **DISEÑO + IMPLEMENTACIÓN SINTÉTICA PROBADA (Python; navegador pendiente)**; **VALIDACIÓN DESKTOP PENDIENTE**. No es una reconstrucción de datos ni decisiones sobre niños reales.
+Estado: **DISEÑO + IMPLEMENTACIÓN SINTÉTICA PROBADA (Python/navegador)**; **VALIDACIÓN DESKTOP PENDIENTE**. No es una reconstrucción de datos ni decisiones sobre niños reales.
 
 ### Estado de esta evolución
 
 El trabajo histórico y la reconstrucción posterior se evalúan por separado. Las propuestas de seguridad y operación no acreditan funciones desplegadas durante mi experiencia laboral. No se publican capturas ni datos institucionales. Los documentos privados permiten contrastar el relato; las pruebas públicas corresponden exclusivamente a código nuevo y datos artificiales.
+
+## Evidencia de ejecución de la recreación
+
+![educacion: visor sintético verificado](../../imagenes/educacion_2026_verificada.jpg)
+
+Recreación técnica posterior (2026), no captura histórica. Captura real del visor web; Power BI Desktop pendiente. [Explorar la demo](https://ipizarroh.github.io/analitica-gestion-social/).

@@ -4,7 +4,7 @@
 
 Desarrollé análisis, prototipos y dashboards para las áreas usuarias, colaboré con BI/TI y actualicé reportes preexistentes. Estos seis casos documentan mi contribución real y explican cómo abordaría hoy sus decisiones de datos y gestión. La evidencia detallada cubre principalmente junio de 2022–febrero de 2024; el vínculo continuó hasta junio de 2024 según el resumen documental. La evolución de 2026 es posterior.
 
-Captura funcional pendiente de revisión de la publicación web.
+![Formación: recreación técnica posterior verificada](imagenes/formacion_2026_verificada.jpg)
 
 *Visor web con datos inventados: recreación técnica posterior (2026), no captura histórica ni Power BI Desktop.*
 
